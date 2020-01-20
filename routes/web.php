@@ -44,3 +44,6 @@ Route::get('/help', 'LandingController@contact')->name('help');
 
 
 // =============================================================================
+
+
+Route::resource('commentaires', 'CommentaireController');

@@ -12,15 +12,15 @@ class LandingController extends Controller {
       return view('health.pages.acceuil', compact('project'));
     }
     public function about(){
-      return view('health.index');
+      return view('health.pages.about');
     }
     public function services(){
-      return view('health.index');
+      return view('health.pages.services');
     }
     public function news(){
-      return view('health.index');
+      return view('health.pages.news');
     }
     public function contact(){
-      return view('health.index');
+      return view('health.pages.contact');
     }
 }
