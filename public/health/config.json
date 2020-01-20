@@ -1,0 +1,24 @@
+{
+  "ProjectName": "Medicall",
+  "ProjectNumber": "+221 77 837 23 90",
+  "ProjectMenu": [
+    { "name": "Acceuil", "route": "landing" },
+    { "name": "A propos", "route": "about"  },
+    { "name": "Services", "route": "services"  },
+    { "name": "Informations", "route": "news"  },
+    { "name": "Contact", "route": "contact" }
+  ],
+  "ProjectSocial": [
+    { "name": "pinterest", "link": "" },
+    { "name": "facebook", "link": "" },
+    { "name": "twitter", "link": "" },
+    { "name": "dribbble", "link": "" },
+    { "name": "behance", "link": "" },
+    { "name": "linkedin", "link": "" }
+  ],
+  "ProjectAssistance": [
+    { "route": "help", "value": "Assistance" },
+    { "route": "help", "value": "Urgence" },
+    { "route": "help", "value": "Rendez-vous" }
+  ]
+}

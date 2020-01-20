@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/', 'LandingController@index')->name('landing');
 
 // InfyOm
 Auth::routes();
@@ -33,4 +32,15 @@ Route::post(
     '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@generateFromFile'
 )->name('io_generator_builder_generate_from_file');
 
-//
+// My routes ===================================================================
+
+Route::get('/', 'LandingController@index')->name('landing');
+Route::get('/about', 'LandingController@about')->name('about');
+Route::get('/services', 'LandingController@services')->name('services');
+Route::get('/news', 'LandingController@news')->name('news');
+Route::get('/contact', 'LandingController@contact')->name('contact');
+
+Route::get('/help', 'LandingController@contact')->name('help');
+
+
+// =============================================================================
