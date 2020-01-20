@@ -9,7 +9,7 @@ class LandingController extends Controller {
 
     public function index(){
       $project = json_decode(file_get_contents('health/config.json'));
-      return view('health.index', compact('project'));
+      return view('health.pages.acceuil', compact('project'));
     }
     public function about(){
       return view('health.index');

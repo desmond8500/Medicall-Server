@@ -12,7 +12,8 @@
 
     		<!-- Header -->
     		@include('health.header')
-    		@include('health.homeContainer')
+    		{{-- @include('health.homeContainer') --}}
+        @yield('content')
     	</div>
 
     	{{-- <!-- Info Boxes -->
