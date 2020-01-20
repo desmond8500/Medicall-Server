@@ -1,6 +1,15 @@
 {
   "ProjectName": "Medicall",
   "ProjectNumber": "+221 77 837 23 90",
+  "ProjectHomeContent": [
+    {
+      "image": "health/images/index_hero.jpg",
+      "title": "Titre",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.",
+      "button": "Plus d'infos",
+      "route": "help"
+    }
+  ],
   "ProjectMenu": [
     { "name": "Acceuil", "route": "landing" },
     { "name": "A propos", "route": "about"  },
@@ -9,16 +18,22 @@
     { "name": "Contact", "route": "contact" }
   ],
   "ProjectSocial": [
-    { "name": "pinterest", "link": "" },
-    { "name": "facebook", "link": "" },
-    { "name": "twitter", "link": "" },
-    { "name": "dribbble", "link": "" },
-    { "name": "behance", "link": "" },
-    { "name": "linkedin", "link": "" }
+    { "name": "pinterest", "route": "help" },
+    { "name": "facebook", "route": "help" },
+    { "name": "twitter", "route": "help" },
+    { "name": "dribbble", "route": "help" },
+    { "name": "behance", "route": "help" },
+    { "name": "linkedin", "route": "help" }
   ],
   "ProjectAssistance": [
     { "route": "help", "value": "Assistance" },
     { "route": "help", "value": "Urgence" },
     { "route": "help", "value": "Rendez-vous" }
+  ],
+  "ProjectFooter": [
+    {
+      "image": "health/images/footer.jpg",
+      "text": "Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing elit. Donec malesuada lorem maximus mauris."
+    }
   ]
 }

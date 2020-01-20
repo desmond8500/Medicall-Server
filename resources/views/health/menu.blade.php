@@ -7,16 +7,16 @@
       <button class="menu_search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
     </form>
     <ul>
-      <li class="menu_item"><a href="{!! route('landing') !!}">Acceuil</a></li>
-      <li class="menu_item"><a href="{!! route('about') !!}">About us</a></li>
-      <li class="menu_item"><a href="{!! route('services') !!}">Services</a></li>
-      <li class="menu_item"><a href="{!! route('news') !!}">News</a></li>
-      <li class="menu_item"><a href="{!! route('contact') !!}">Contact</a></li>
+      @foreach ($project->ProjectAssistance as $key => $value)
+        <li class="menu_item"><a href="{!! route($value->route) !!}">{{ $value->value }}</a></li>
+      @endforeach
     </ul>
   </div>
   <div class="menu_social">
     <ul>
-      <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+      {{-- @foreach ($project->ProjectSocial as $key => $value)
+        <li><a href="{!! route($value->route) !!}"><i class="fa fa-{{ $value->value }}" aria-hidden="true"></i></a></li>
+      @endforeach --}}
       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
       <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
       <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>

@@ -8,7 +8,7 @@
 
     	<!-- Home -->
     	<div class="home">
-    		<div class="background_image" style="background-image:url({!! asset('images/index_hero.jpg') !!})"></div>
+    		<div class="background_image" style="background-image:url({!! asset($project->ProjectHomeContent[0]->image) !!})"></div>
 
     		<!-- Header -->
     		@include('health.header')
@@ -30,8 +30,9 @@
     	<!-- FAQ & News -->
     	@include('health.faq')
 
+      --}}
     	<!-- Footer -->
-    	@include('health.footer') --}}
+    	@include('health.footer')
     </div>
 
     @include('health.script')

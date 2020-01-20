@@ -36,7 +36,6 @@
                 <div class="header_nav_content d-flex flex-row align-items-center justify-content-start">
                   <nav class="main_nav">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
-                      {{-- <li class="active" ><a href="{!! route('landing') !!}">Acceuil</a></li> --}}
                       @foreach ($project->ProjectMenu as $key => $value)
                         <li><a href="{!! route($value->route) !!}">{{ $value->name }}</a></li>
                       @endforeach
