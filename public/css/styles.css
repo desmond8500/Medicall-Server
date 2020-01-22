@@ -1,0 +1,10 @@
+.inscrit{
+  position: relative;
+  display: block;
+  color: black;
+  margin-top: 10px;
+}
+
+.inscrit a{
+  color: black;
+}
