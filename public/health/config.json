@@ -10,6 +10,9 @@
       "route": "help"
     }
   ],
+  "ProjectBackground": [
+    "health/images/index_hero.jpg"
+  ],
   "ProjectMenu": [
     { "name": "Acceuil", "route": "landing" },
     { "name": "A propos", "route": "about"  },
@@ -57,7 +60,7 @@
     },
     {
       "title": "Pour les infirmiers",
-      "text": "Vous pouvez intégrer la plateforme afin de faire bénéficier vos services aux autres",
+      "text": "Vous pouvez intégrer notre équipe afin de faire bénéficier vos services aux plus grand nombre",
       "route": "landing",
       "button": "Plus d'infos",
       "image": "health/images/info_2.jpg"

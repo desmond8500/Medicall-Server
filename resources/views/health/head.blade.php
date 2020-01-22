@@ -11,4 +11,6 @@
 <link rel="stylesheet" type="text/css" href="{!! asset('health/plugins/OwlCarousel2-2.2.1/animate.css') !!}">
 <link rel="stylesheet" type="text/css" href="{!! asset('health/styles/main_styles.css') !!}">
 <link rel="stylesheet" type="text/css" href="{!! asset('health/styles/responsive.css') !!}">
+<link rel="stylesheet" type="text/css" href="{!! asset('health/styles/styles.css') !!}">
+
 </head>

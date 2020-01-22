@@ -22,21 +22,23 @@
       <!-- Info Form -->
       <div class="col-lg-4 info_box_col">
         <div class="info_form_container">
-          <div class="info_form_title">Prendre un Rendez-vous</div>
+          <div class="info_form_title">Créez un compte</div>
           <form action="#" class="info_form" id="info_form">
             <select name="info_form_dep" id="info_form_dep" class="info_form_dep info_input info_select">
-              <option>Department</option>
-              <option>Department</option>
-              <option>Department</option>
+              <option value="patient">Patient</option>
+              <option value="infirmier">Infirmier</option>
             </select>
-            <select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select">
+            {{-- <select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select">
               <option>Doctor</option>
               <option>Doctor</option>
               <option>Doctor</option>
-            </select>
-            <input type="text" class="info_input" placeholder="Name" required="required">
-            <input type="text" class="info_input" placeholder="Phone No">
-            <button class="info_form_button">make an appointment</button>
+            </select> --}}
+            <input type="text" class="info_input" placeholder="Nom" required="required">
+            <input type="tel" class="info_input" placeholder="Numéro de téléphone" required="required">
+            <input type="mail" class="info_input" placeholder="E mail">
+
+            <button class="info_form_button">S'inscrire</button>
+            <a href="#" class="inscrit">Déja Inscrit ?</a>
           </form>
         </div>
       </div>

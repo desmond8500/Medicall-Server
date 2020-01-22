@@ -7,8 +7,8 @@
       <button class="menu_search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
     </form>
     <ul>
-      @foreach ($project->ProjectAssistance as $key => $value)
-        <li class="menu_item"><a href="{!! route($value->route) !!}">{{ $value->value }}</a></li>
+      @foreach ($project->ProjectMenu as $key => $value)
+        <li class="menu_item"><a href="{!! route($value->route) !!}">{{ $value->name }}</a></li>
       @endforeach
     </ul>
   </div>

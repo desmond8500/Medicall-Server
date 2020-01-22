@@ -1,17 +1,26 @@
 @extends('health.index')
 
 @section('content')
-  <div class="home_container">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="home_content">
-            <div class="home_title">{{ $project->ProjectHomeContent[0]->title }}</div>
-            <div class="home_text">{{ $project->ProjectHomeContent[0]->text }}</div>
-            <div class="button home_button"><a href="{!! route('help') !!}"><span>{{ $project->ProjectHomeContent[0]->button }}</span><span>{{ $project->ProjectHomeContent[0]->button }}</span></a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="background_image" style="background-image:url({!! asset($project->ProjectBackground[0]) !!})"></div>
+
+  @include('health.header')
+  @include('health.content.home',['home'=> $project->ProjectHomeContent[0]])
+@endsection
+
+
+@section('subcontent')
+  {{-- <!-- Info Boxes -->
+  @include('health.content.infoBoxes')
+
+  <!-- CTA -->
+  @include('health.content.cta')
+
+  <!-- Services -->
+  @include('health.content.services')
+
+  <!-- Departments -->
+  @include('health.departement')
+
+  <!-- FAQ & News -->
+  @include('health.faq') --}}
 @endsection
