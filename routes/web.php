@@ -47,10 +47,10 @@ Route::get('facebook', function(){
   return redirect('https://web.facebook.com/?_rdc=1&_rdr');
 })->name('facebook');
 Route::get('twitter', function(){
-  return url('http://localhost:8000');
+  return redirect('https://twitter.com/MedicallSuivi');
 })->name('twitter');
 Route::get('linkedin', function(){
-  return url('http://localhost:8000');
+  return redirect('https://www.linkedin.com/in/medicall-sant%C3%A9-suivi-3809021a0/');
 })->name('linkedin');
 
 // =============================================================================

@@ -22,8 +22,8 @@
   ],
   "ProjectSocial": [
     { "name": "facebook", "route": "facebook" },
-    { "name": "twitter", "route": "help" },
-    { "name": "linkedin", "route": "help" }
+    { "name": "twitter", "route": "twitter" },
+    { "name": "linkedin", "route": "linkedin" }
   ],
   "ProjectAssistance": [
     { "route": "help", "value": "Assistance" },
@@ -60,6 +60,13 @@
     },
     {
       "title": "Pour les infirmiers",
+      "text": "Vous pouvez intégrer notre équipe afin de faire bénéficier vos services aux plus grand nombre",
+      "route": "landing",
+      "button": "Plus d'infos",
+      "image": "health/images/info_2.jpg"
+    },
+    {
+      "title": "Pour les medecins",
       "text": "Vous pouvez intégrer notre équipe afin de faire bénéficier vos services aux plus grand nombre",
       "route": "landing",
       "button": "Plus d'infos",

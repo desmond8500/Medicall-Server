@@ -51,7 +51,7 @@
 
             <!-- Latest News Post -->
             <div class="latest d-flex flex-row align-items-start justify-content-start">
-              <div><div class="latest_image"><img src="images/latest_1.jpg" alt=""></div></div>
+              <div><div class="latest_image"><img src="{!! asset('health/images/latest_1.jpg') !!}" alt=""></div></div>
               <div class="latest_content">
                 <div class="latest_title"><a href="news.html">A simple blog post</a></div>
                 <div class="latest_info">
@@ -66,7 +66,7 @@
 
             <!-- Latest News Post -->
             <div class="latest d-flex flex-row align-items-start justify-content-start">
-              <div><div class="latest_image"><img src="images/latest_2.jpg" alt=""></div></div>
+              <div><div class="latest_image"><img src="{!! asset('health/images/latest_2.jpg') !!}" alt=""></div></div>
               <div class="latest_content">
                 <div class="latest_title"><a href="news.html">A new way to see things in medicine</a></div>
                 <div class="latest_info">
@@ -81,7 +81,7 @@
 
             <!-- Latest News Post -->
             <div class="latest d-flex flex-row align-items-start justify-content-start">
-              <div><div class="latest_image"><img src="images/latest_3.jpg" alt=""></div></div>
+              <div><div class="latest_image"><img src="{!! asset('health/images/latest_3.jpg') !!}" alt=""></div></div>
               <div class="latest_content">
                 <div class="latest_title"><a href="news.html">Why is Pharma industry so big?</a></div>
                 <div class="latest_info">
