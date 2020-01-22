@@ -15,3 +15,7 @@
 <link rel="stylesheet" type="text/css" href="{!! asset('health/styles/styles.css') !!}">
 
 </head>
+
+@php
+  echo getcwd();
+@endphp
