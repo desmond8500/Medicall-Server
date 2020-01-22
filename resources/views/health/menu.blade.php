@@ -14,14 +14,9 @@
   </div>
   <div class="menu_social">
     <ul>
-      {{-- @foreach ($project->ProjectSocial as $key => $value)
-        <li><a href="{!! route($value->route) !!}"><i class="fa fa-{{ $value->value }}" aria-hidden="true"></i></a></li>
-      @endforeach --}}
-      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      @foreach ($project->ProjectSocial as $key => $value)
+        <li><a href="{!! route($value->route) !!}"><i class="fa fa-{{ $value->name }}" aria-hidden="true"></i></a></li>
+      @endforeach
     </ul>
   </div>
 </div>

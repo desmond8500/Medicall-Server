@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-  @include('health.head')
+  @include('health.head', ['titre'=>$project->ProjectName])
   <body>
     <div class="super_container">
     	<!-- Menu -->
@@ -33,7 +33,7 @@
 
       --}}
     	<!-- Footer -->
-    	@include('health.footer')
+    	@include('health.footer.footer')
     </div>
 
     @include('health.script')

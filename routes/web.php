@@ -42,6 +42,16 @@ Route::get('/contact', 'LandingController@contact')->name('contact');
 
 Route::get('/help', 'LandingController@contact')->name('help');
 
+// Réseaux sociaux
+Route::get('facebook', function(){
+  return redirect('https://web.facebook.com/?_rdc=1&_rdr');
+})->name('facebook');
+Route::get('twitter', function(){
+  return url('http://localhost:8000');
+})->name('twitter');
+Route::get('linkedin', function(){
+  return url('http://localhost:8000');
+})->name('linkedin');
 
 // =============================================================================
 

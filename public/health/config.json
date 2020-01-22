@@ -18,11 +18,8 @@
     { "name": "Contact", "route": "contact" }
   ],
   "ProjectSocial": [
-    { "name": "pinterest", "route": "help" },
-    { "name": "facebook", "route": "help" },
+    { "name": "facebook", "route": "facebook" },
     { "name": "twitter", "route": "help" },
-    { "name": "dribbble", "route": "help" },
-    { "name": "behance", "route": "help" },
     { "name": "linkedin", "route": "help" }
   ],
   "ProjectAssistance": [
@@ -33,7 +30,21 @@
   "ProjectFooter": [
     {
       "image": "health/images/footer.jpg",
-      "text": "Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing elit. Donec malesuada lorem maximus mauris."
+      "text": "Vous pouvez nous laisser un message sur le formulaire à coté ...."
+    }
+  ],
+  "ProjectHoraires": [
+    {
+      "date": "Lundi au Vendredi",
+      "heure": "8.00 – 19.00"
+    },
+    {
+      "date": "Samedi",
+      "heure": "9.00 – 15.00"
+    },
+    {
+      "date": "Dimanche",
+      "heure": "9.00 – 13.00"
     }
   ]
 }
