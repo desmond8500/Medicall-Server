@@ -4,8 +4,8 @@
   "ProjectHomeContent": [
     {
       "image": "health/images/index_hero.jpg",
-      "title": "Titre",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.",
+      "title": "Soins à domicile",
+      "text": "Nous vous apportons des soins de qualité à domicile",
       "button": "Plus d'infos",
       "route": "help"
     }
@@ -45,6 +45,61 @@
     {
       "date": "Dimanche",
       "heure": "9.00 – 13.00"
+    }
+  ],
+  "ProjectInfobox": [
+    {
+      "title": "Pour les patient",
+      "text": "Vous pouvez vous connecter sur la plateforme pour contacter un spécialiste",
+      "route": "landing",
+      "button": "Plus d'infos",
+      "image": "health/images/info_1.jpg"
+    },
+    {
+      "title": "Pour les infirmiers",
+      "text": "Vous pouvez intégrer la plateforme afin de faire bénéficier vos services aux autres",
+      "route": "landing",
+      "button": "Plus d'infos",
+      "image": "health/images/info_2.jpg"
+    }
+  ],
+  "ProjectCTA": [
+    {
+      "image": "health/images/cta_1.jpg",
+      "title": "",
+      "subtitle": ""
+    }
+  ],
+  "ProjectServices": [
+    {
+      "icon": "health/images/icon_1.svg",
+      "title": "Cardiology",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris."
+    },
+    {
+      "icon": "health/images/icon_2.svg",
+      "title": "Gastroenterology",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris."
+    },
+    {
+      "icon": "health/images/icon_3.svg",
+      "title": "Medical Lab",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris."
+    },
+    {
+      "icon": "health/images/icon_4.svg",
+      "title": "Dental Care",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris."
+    },
+    {
+      "icon": "health/images/icon_5.svg",
+      "title": "Surgery",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris."
+    },
+    {
+      "icon": "health/images/icon_6.svg",
+      "title": "Neurology",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris."
     }
   ]
 }

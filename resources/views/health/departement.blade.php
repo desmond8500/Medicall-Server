@@ -16,7 +16,7 @@
 
               <!-- Slide -->
               <div class="owl-item dept_item">
-                <div class="dept_image"><img src="images/dept_1.jpg" alt=""></div>
+                <div class="dept_image"><img src="health/images/dept_1.jpg" alt=""></div>
                 <div class="dept_content">
                   <div class="dept_title">Neonatology</div>
                   <div class="dept_link"><a href="#">Read More</a></div>
@@ -25,7 +25,7 @@
 
               <!-- Slide -->
               <div class="owl-item dept_item">
-                <div class="dept_image"><img src="images/dept_2.jpg" alt=""></div>
+                <div class="dept_image"><img src="health/images/dept_2.jpg" alt=""></div>
                 <div class="dept_content">
                   <div class="dept_title">Dentistry</div>
                   <div class="dept_link"><a href="#">Read More</a></div>
@@ -34,7 +34,7 @@
 
               <!-- Slide -->
               <div class="owl-item dept_item">
-                <div class="dept_image"><img src="images/dept_3.jpg" alt=""></div>
+                <div class="dept_image"><img src="health/images/dept_3.jpg" alt=""></div>
                 <div class="dept_content">
                   <div class="dept_title">Orthopedics</div>
                   <div class="dept_link"><a href="#">Read More</a></div>
@@ -43,7 +43,7 @@
 
               <!-- Slide -->
               <div class="owl-item dept_item">
-                <div class="dept_image"><img src="images/dept_4.jpg" alt=""></div>
+                <div class="dept_image"><img src="health/images/dept_4.jpg" alt=""></div>
                 <div class="dept_content">
                   <div class="dept_title">Laboratory</div>
                   <div class="dept_link"><a href="#">Read More</a></div>

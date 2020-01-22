@@ -12,18 +12,18 @@
 
     		<!-- Header -->
     		@include('health.header')
-    		{{-- @include('health.homeContainer') --}}
+    		@include('health.homeContainer')
         @yield('content')
     	</div>
 
-    	{{-- <!-- Info Boxes -->
-    	@include('health.infoBoxes')
+      <!-- Info Boxes -->
+    	@include('health.content.infoBoxes')
 
     	<!-- CTA -->
-    	@include('health.cta')
+    	@include('health.content.cta')
 
     	<!-- Services -->
-      @include('health.service')
+      @include('health.content.services')
 
     	<!-- Departments -->
     	@include('health.departement')
@@ -31,7 +31,6 @@
     	<!-- FAQ & News -->
     	@include('health.faq')
 
-      --}}
     	<!-- Footer -->
     	@include('health.footer.footer')
     </div>
