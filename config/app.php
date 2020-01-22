@@ -119,7 +119,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY','base64:BHonIJqpov4VG5rAVbwNmAFdreGiRK8cbiELc1S5iiU='),
 
     'cipher' => 'AES-256-CBC',
 
@@ -181,7 +181,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        \InfyOm\GeneratorBuilder\GeneratorBuilderServiceProvider::class, 
+        \InfyOm\GeneratorBuilder\GeneratorBuilderServiceProvider::class,
 
     ],
 
