@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/any-route', function () {
+  Artisan::call('storage:link');
+});
+
 
 // InfyOm
 Auth::routes();
