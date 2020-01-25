@@ -1,5 +1,6 @@
 /node_modules
 /public/hot
+!/public/health
 /vendor
 .env
 .env.backup
