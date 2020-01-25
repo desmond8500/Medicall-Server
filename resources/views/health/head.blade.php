@@ -5,6 +5,7 @@
 <meta name="description" content="Health medical template project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="{!! asset('www/health/styles/bootstrap4/bootstrap.min.css') !!}">
+<link rel="stylesheet" type="text/css" href="www/health/styles/bootstrap4/bootstrap.min.css">
 
 <link rel="stylesheet" type="text/css" href="{!! asset('health/styles/bootstrap4/bootstrap.min.css') !!}">
 {{-- <link href="{!! asset('health/plugins/font-awesome-4.7.0/css/font-awesome.min.css') !!}" rel="stylesheet" type="text/css">
