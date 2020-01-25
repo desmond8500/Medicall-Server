@@ -7,7 +7,7 @@
   @include('health.content.home',['home'=> $project->ProjectHomeContent[0]]);
   @php
     $test  = glob('health/styles/*');
-    var_dump($test);
+    var_dump(asset($test));
   @endphp
 
 @endsection
