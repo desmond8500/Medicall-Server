@@ -1,21 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-Route::get('/any-route', function () {
-  Artisan::call('storage:link');
-});
-
-
 // InfyOm
 Auth::routes();
 
@@ -43,6 +27,9 @@ Route::get('/about', 'LandingController@about')->name('about');
 Route::get('/services', 'LandingController@services')->name('services');
 Route::get('/news', 'LandingController@news')->name('news');
 Route::get('/contact', 'LandingController@contact')->name('contact');
+
+// Route::get('/login', 'LandingController@login')->name('login');
+// Route::get('/register', 'LandingController@register')->name('register');
 
 Route::get('/help', 'LandingController@contact')->name('help');
 

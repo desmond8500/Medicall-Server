@@ -24,7 +24,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <div class="button services_button ml-auto mr-auto"><a href="#"><span>read more</span><span>read more</span></a></div>
+        <div class="button services_button ml-auto mr-auto"><a href="{!! route('landing') !!}"><span>Plus d'infos</span><span>Plus d'infos</span></a></div>
       </div>
     </div>
   </div>

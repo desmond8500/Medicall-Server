@@ -20,7 +20,7 @@
       @endforeach
 
       <!-- Info Form -->
-      <div class="col-lg-4 info_box_col">
+      {{-- <div class="col-lg-4 info_box_col">
         <div class="info_form_container">
           <div class="info_form_title">Créez un compte</div>
           <form action="#" class="info_form" id="info_form">
@@ -28,11 +28,11 @@
               <option value="patient">Patient</option>
               <option value="infirmier">Infirmier</option>
             </select>
-            {{-- <select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select">
+             <select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select">
               <option>Doctor</option>
               <option>Doctor</option>
               <option>Doctor</option>
-            </select> --}}
+            </select>
             <input type="text" class="info_input" placeholder="Nom" required="required">
             <input type="tel" class="info_input" placeholder="Numéro de téléphone" required="required">
             <input type="mail" class="info_input" placeholder="E mail">
@@ -41,7 +41,7 @@
             <a href="#" class="inscrit">Déja Inscrit ?</a>
           </form>
         </div>
-      </div>
+      </div> --}}
     </div>
   </div>
 </div>

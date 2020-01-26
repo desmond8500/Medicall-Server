@@ -15,9 +15,9 @@
   ],
   "ProjectMenu": [
     { "name": "Acceuil", "route": "landing" },
-    { "name": "A propos", "route": "about"  },
     { "name": "Services", "route": "services"  },
     { "name": "Informations", "route": "news"  },
+    { "name": "A propos", "route": "about"  },
     { "name": "Contact", "route": "contact" }
   ],
   "ProjectSocial": [
@@ -26,9 +26,8 @@
     { "name": "linkedin", "route": "linkedin" }
   ],
   "ProjectAssistance": [
-    { "route": "help", "value": "Assistance" },
-    { "route": "help", "value": "Urgence" },
-    { "route": "help", "value": "Rendez-vous" }
+    { "route": "help", "value": "S'incrire" },
+    { "route": "help", "value": "Se Connecter" }
   ],
   "ProjectFooter": [
     {
@@ -53,7 +52,7 @@
   "ProjectInfobox": [
     {
       "title": "Pour les patient",
-      "text": "Vous pouvez vous connecter sur la plateforme pour contacter un spécialiste",
+      "text": "Contactez notre équipe de professionels",
       "route": "landing",
       "button": "Plus d'infos",
       "image": "health/images/info_1.jpg"
@@ -76,40 +75,40 @@
   "ProjectCTA": [
     {
       "image": "health/images/cta_1.jpg",
-      "title": "",
-      "subtitle": ""
+      "title": "Inscrivez vous sur notre plateforme pour bénéficier de nos services",
+      "subtitle": "Vous pouvez utiliser notre plateforme en temps que professionel de la sante ou en tant que patient"
     }
   ],
   "ProjectServices": [
     {
       "icon": "health/images/icon_1.svg",
-      "title": "Cardiology",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris."
+      "title": "Soins à domicile",
+      "text": "Injection, pensements, perfusions, prise de sang"
     },
     {
       "icon": "health/images/icon_2.svg",
-      "title": "Gastroenterology",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris."
+      "title": "Assistance personnelle",
+      "text": "Aide pour la toilette et ou l'habillage des personnes agées ou à mobilité réduite"
     },
     {
       "icon": "health/images/icon_3.svg",
-      "title": "Medical Lab",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris."
+      "title": "Medicaments",
+      "text": "Distribution et suivi de la prise de médicaments"
     },
     {
       "icon": "health/images/icon_4.svg",
-      "title": "Dental Care",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris."
+      "title": "Suivi Personnel",
+      "text": "Surveillance des constantes (tension, poul, température)"
     },
     {
       "icon": "health/images/icon_5.svg",
-      "title": "Surgery",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris."
+      "title": "Assistance d'urgence",
+      "text": "Intervention rapide en cas d'urgence"
     },
     {
       "icon": "health/images/icon_6.svg",
-      "title": "Neurology",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris."
+      "title": "Autres Soins",
+      "text": "Tout type des soins pouvant être fait à dmicile"
     }
   ]
 }

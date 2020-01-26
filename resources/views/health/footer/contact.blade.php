@@ -2,7 +2,7 @@
   <div class="footer_contact">
     <div class="footer_contact_title">Contactez-Nous</div>
     <div class="footer_contact_form_container">
-      <form action="/commentaires"method="post" class="footer_contact_form" id="footer_contact_form">
+      <form action="/commentaires" method="post" class="footer_contact_form" id="footer_contact_form">
         @csrf
         <div class="d-flex flex-xl-row flex-column align-items-center justify-content-between">
           <input type="text" class="footer_contact_input" placeholder="Nom" required="required" name="nom">

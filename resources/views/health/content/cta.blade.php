@@ -5,10 +5,10 @@
       <div class="col">
         <div class="cta_container d-flex flex-xl-row flex-column align-items-xl-start align-items-center justify-content-xl-start justify-content-center">
           <div class="cta_content text-xl-left text-center">
-            <div class="cta_title">Prenez rendez vous avec nos infirmiers.</div>
-            <div class="cta_subtitle">Morbi arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas.</div>
+            <div class="cta_title">{{ $project->ProjectCTA[0]->title }}</div>
+            <div class="cta_subtitle"> {{ $project->ProjectCTA[0]->subtitle }} </div>
           </div>
-          <div class="button cta_button ml-xl-auto"><a href="{!! route('landing') !!}"><span>Appelez-nous</span><span>call now</span></a></div>
+          <div class="button cta_button ml-xl-auto"><a href="{!! route('landing') !!}"><span>Inscription</span><span>S'incrire</span></a></div>
         </div>
       </div>
     </div>

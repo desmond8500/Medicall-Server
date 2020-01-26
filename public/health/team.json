@@ -1,0 +1,33 @@
+{
+  "team": "Medicall",
+  "Equipes": [
+    {
+      "image": "health/images/doc_1.jpg",
+      "routeName": "",
+      "nom": "Michael Smith",
+      "titre": "Surgeon",
+      "routeTitle": ""
+    },
+    {
+      "image": "health/images/doc_1.jpg",
+      "routeName": "",
+      "nom": "Michael Smith",
+      "titre": "Surgeon",
+      "routeTitle": ""
+    },
+    {
+      "image": "health/images/doc_1.jpg",
+      "routeName": "",
+      "nom": "Michael Smith",
+      "titre": "Surgeon",
+      "routeTitle": ""
+    },
+    {
+      "image": "health/images/doc_1.jpg",
+      "routeName": "",
+      "nom": "Michael Smith",
+      "titre": "Surgeon",
+      "routeTitle": ""
+    }
+  ]
+}
