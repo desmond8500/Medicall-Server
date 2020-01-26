@@ -27,10 +27,10 @@
   @include('health.content.services')
 
   <!-- Departments -->
-  @include('health.departement')
+  {{-- @include('health.departement') --}}
 
   <!-- FAQ & News -->
-  @include('health.faq')
+  {{-- @include('health.faq') --}}
 @endsection
 
 @section('script')
