@@ -26,8 +26,9 @@
     { "name": "linkedin", "route": "linkedin" }
   ],
   "ProjectAssistance": [
-    { "route": "help", "value": "S'incrire" },
-    { "route": "help", "value": "Se Connecter" }
+    { "route": "landing", "value": "Nos professionels" },
+    { "route": "landing", "value": "Aide" },
+    { "route": "landing", "value": "" }
   ],
   "ProjectFooter": [
     {

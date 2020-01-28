@@ -27,4 +27,12 @@ class LandingController extends Controller {
       $project = json_decode(file_get_contents('health/config.json'));
       return view('health.pages.contact', compact('project'));
     }
+    public function register(){
+      $project = json_decode(file_get_contents('health/config.json'));
+      return view('health.pages.register', compact('project'));
+    }
+    public function login(){
+      $project = json_decode(file_get_contents('health/config.json'));
+      return view('health.pages.login', compact('project'));
+    }
 }

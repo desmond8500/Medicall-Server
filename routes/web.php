@@ -28,8 +28,8 @@ Route::get('/services', 'LandingController@services')->name('services');
 Route::get('/news', 'LandingController@news')->name('news');
 Route::get('/contact', 'LandingController@contact')->name('contact');
 
-// Route::get('/login', 'LandingController@login')->name('login');
-// Route::get('/register', 'LandingController@register')->name('register');
+Route::get('/connect', 'LandingController@login')->name('connect');
+Route::get('/registering', 'LandingController@register')->name('registering');
 
 Route::get('/help', 'LandingController@contact')->name('help');
 
@@ -48,6 +48,4 @@ Route::get('linkedin', function(){
 
 
 Route::resource('commentaires', 'CommentaireController');
-
-
 Route::resource('comptes', 'CompteController');
