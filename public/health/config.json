@@ -5,7 +5,7 @@
     {
       "image": "health/images/index_hero.jpg",
       "title": "Soins à domicile",
-      "text": "Nous vous apportons des soins de qualité à domicile",
+      "text": "Nous somme là pour vous apporter des soins de qualité à domicile",
       "button": "Plus d'infos",
       "route": "help"
     }
@@ -53,20 +53,13 @@
   "ProjectInfobox": [
     {
       "title": "Pour les patient",
-      "text": "Contactez notre équipe de professionels",
+      "text": "Contactez notre équipe de professionels pour recevoir des soins pour vous ou vos proches",
       "route": "landing",
       "button": "Plus d'infos",
       "image": "health/images/info_1.jpg"
     },
     {
       "title": "Pour les infirmiers",
-      "text": "Vous pouvez intégrer notre équipe afin de faire bénéficier vos services aux plus grand nombre",
-      "route": "landing",
-      "button": "Plus d'infos",
-      "image": "health/images/info_2.jpg"
-    },
-    {
-      "title": "Pour les medecins",
       "text": "Vous pouvez intégrer notre équipe afin de faire bénéficier vos services aux plus grand nombre",
       "route": "landing",
       "button": "Plus d'infos",
