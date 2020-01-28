@@ -110,12 +110,12 @@ p a:hover::after
 }
 ::selection
 {
-	background: #32c69a;
+	background: #2BABE3;
 	color: #FFFFFF;
 }
 p::selection
 {
-	
+
 }
 h1{font-size: 48px;}
 h2{font-size: 36px;}
@@ -129,14 +129,14 @@ h1, h2, h3, h4, h5, h6
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
 h6::selection
 {
-	
+
 }
 .form-control
 {
@@ -254,7 +254,7 @@ section
 {
 	width: 137px;
 	height: 54px;
-	background: #32c69a;
+	background: #2BABE3;
 	overflow: hidden;
 }
 .button a
@@ -384,7 +384,7 @@ section
 {
 	position: relative;
 	font-size: 36px;
-	color: #32c69a;
+	color: #2BABE3;
 	line-height: 0.75;
 	vertical-align: text-top;
 }
@@ -411,7 +411,7 @@ section
 }
 .header_top_nav ul li a:hover
 {
-	color: #32c69a;
+	color: #2BABE3;
 }
 .header_top_phone
 {
@@ -420,7 +420,7 @@ section
 .header_top_phone i
 {
 	font-size: 22px;
-	color: #32c69a;
+	color: #2BABE3;
 	vertical-align: middle;
 	transform: translateY(-1px);
 }
@@ -462,7 +462,7 @@ section
 .header_nav_container
 {
 	z-index: 1;
-	background: #32c69a;
+	background: #2BABE3;
 }
 .header_nav_content
 {
@@ -542,9 +542,9 @@ section
 	font-weight: 400 !important;
 	font-style: italic;
 	color: #ababab !important;
-} 
+}
 .search_container_input:-ms-input-placeholder
-{ 
+{
 	font-size: 12px !important;
 	font-weight: 400 !important;
 	font-style: italic;
@@ -739,9 +739,9 @@ section
 	font-weight: 400 !important;
 	font-style: italic;
 	color: #ababab !important;
-} 
+}
 .menu_search_input:-ms-input-placeholder
-{ 
+{
 	font-size: 12px !important;
 	font-weight: 400 !important;
 	font-style: italic;
@@ -956,9 +956,9 @@ section
 	font-weight: 500 !important;
 	font-style: italic;
 	color: #828282 !important;
-} 
+}
 .info_input:-ms-input-placeholder
-{ 
+{
 	font-size: 12px !important;
 	font-weight: 500 !important;
 	font-style: italic;
@@ -997,7 +997,7 @@ section
 {
 	width: 100%;
 	height: 54px;
-	background: #32c69a;
+	background: #2BABE3;
 	border: none;
 	outline: none;
 	color: #FFFFFF;
@@ -1168,7 +1168,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 4px;
-	background: #32c69a;
+	background: #2BABE3;
 	content: '';
 }
 .dept_title
@@ -1194,7 +1194,7 @@ section
 }
 .dept_link a:hover
 {
-	color: #32c69a;
+	color: #2BABE3;
 }
 .dept_slider_nav
 {
@@ -1208,7 +1208,7 @@ section
 	right: -106px;
 	width: 42px;
 	height: 42px;
-	background: #32c69a;
+	background: #2BABE3;
 	text-align: center;
 	cursor: pointer;
 }
@@ -1312,7 +1312,7 @@ section
 	width: 50px;
 	height: 100%;
 	content: '+';
-	background: #32c69a;
+	background: #2BABE3;
 	font-size: 14px;
 	color: #FFFFFF;
 	font-weight: 500;
@@ -1324,7 +1324,7 @@ section
 }
 .accordion.active
 {
-	background: #32c69a;
+	background: #2BABE3;
 	color: #FFFFFF;
 }
 .accordion.active::after
@@ -1416,7 +1416,7 @@ section
 }
 .latest_title a:hover
 {
-	color: #32c69a;
+	color: #2BABE3;
 }
 .latest_info
 {
@@ -1448,7 +1448,7 @@ section
 }
 .latest_info ul li a:hover
 {
-	color: #32c69a;
+	color: #2BABE3;
 }
 .latest_comments
 {
@@ -1458,7 +1458,7 @@ section
 {
 	font-size: 12px;
 	font-weight: 500;
-	color: #32c69a;
+	color: #2BABE3;
 }
 
 /*********************************
@@ -1561,9 +1561,9 @@ section
 	font-weight: 400 !important;
 	font-style: italic;
 	color: #FFFFFF !important;
-} 
+}
 .footer_contact_input:-ms-input-placeholder
-{ 
+{
 	font-size: 12px !important;
 	font-weight: 400 !important;
 	font-style: italic;
@@ -1585,7 +1585,7 @@ section
 {
 	width: 275px;
 	height: 54px;
-	background: #32c69a;
+	background: #2BABE3;
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -1652,7 +1652,7 @@ section
 }
 .footer_nav ul li a:hover
 {
-	color: #32c69a;
+	color: #2BABE3;
 }
 .footer_links
 {
@@ -1681,18 +1681,18 @@ section
 }
 .footer_links ul li a:hover
 {
-	color: #32c69a;
+	color: #2BABE3;
 }
 .footer_phone span
 {
 	font-size: 14px;
 	font-weight: 600;
-	color: #32c69a;
+	color: #2BABE3;
 }
 .footer_phone i
 {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 20px;
-	color: #32c69a;
+	color: #2BABE3;
 }
