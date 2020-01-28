@@ -48,3 +48,6 @@ Route::get('linkedin', function(){
 
 
 Route::resource('commentaires', 'CommentaireController');
+
+
+Route::resource('comptes', 'CompteController');

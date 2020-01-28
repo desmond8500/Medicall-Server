@@ -4,3 +4,9 @@
         <span>Commentaires</span>
     </a>
 </li>
+<li class="nav-item {{ Request::is('comptes*') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('comptes.index') }}">
+        <i class="nav-icon icon-cursor"></i>
+        <span>Comptes</span>
+    </a>
+</li>
