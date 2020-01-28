@@ -17,6 +17,9 @@
 @endsection
 
 @section('subcontent')
+  <!-- Tabs -->
+  @include('health.content.tabs',['tabs'=>$tabs])
+
   <!-- Info Boxes -->
   @include('health.content.infoBoxes')
 
@@ -25,6 +28,7 @@
 
   <!-- Services -->
   @include('health.content.services')
+
 
   <!-- Departments -->
   {{-- @include('health.departement') --}}
@@ -38,4 +42,12 @@
   <script src="{!! asset('health/plugins/easing/easing.js') !!}"></script>
   <script src="{!! asset('health/plugins/parallax-js-master/parallax.min.js') !!}"></script>
   <script src="{!! asset('health/js/custom.js') !!}"></script>
+
+  <script src="{!! asset('health/plugins/greensock/TweenMax.min.js') !!}"></script>
+  <script src="{!! asset('health/plugins/greensock/TimelineMax.min.js') !!}"></script>
+  <script src="{!! asset('health/plugins/scrollmagic/ScrollMagic.min.js') !!}"></script>
+  <script src="{!! asset('health/plugins/greensock/animation.gsap.min.js') !!}"></script>
+  <script src="{!! asset('health/plugins/greensock/ScrollToPlugin.min.js') !!}"></script>
+  <script src="{!! asset('health/plugins/easing/easing.js') !!}"></script>
+  <script src="{!! asset('health/js/services.js') !!}"></script>
 @endsection

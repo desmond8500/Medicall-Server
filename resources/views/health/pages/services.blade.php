@@ -17,9 +17,9 @@
 
 
 @section('subcontent')
+  @include('health.content.tabs')
   {{-- <!-- Info Boxes -->
   @include('health.content.infoBoxes')
-
   <!-- CTA -->
   @include('health.content.cta')
 

@@ -3,9 +3,10 @@
   "ProjectNumber": "+221 77 837 23 90",
   "ProjectHomeContent": [
     {
-      "image": "health/images/index_hero.jpg",
+      "image": "health/images/matheus-ferrero-yfmjALh1S6s-unsplash.jpg",
       "title": "Soins à domicile",
-      "text": "Nous somme là pour vous apporter des soins de qualité à domicile",
+      "text": "Medicall est une plateforme de mise en relation d'infirmiers avec des patients afin que ces derniers puissent bénéficier de soins à domicile.",
+      "text2": "C'est simple, c'est rapide, c'est pratique",
       "button": "Plus d'infos",
       "route": "help"
     }
@@ -52,18 +53,25 @@
   ],
   "ProjectInfobox": [
     {
-      "title": "Pour les patient",
-      "text": "Contactez notre équipe de professionels pour recevoir des soins pour vous ou vos proches",
+      "title": "Choisissez vos soins",
+      "text": "Laissez-vous guider par notre formulaire de demande de soins simple et rapide. Il vous faudra moins de 3 minutes pour le remplir.",
       "route": "landing",
       "button": "Plus d'infos",
-      "image": "health/images/info_1.jpg"
+      "image": "health/images/meghan-schiereck-_XFObcM_7KU-unsplash.jpg"
     },
     {
-      "title": "Pour les infirmiers",
-      "text": "Vous pouvez intégrer notre équipe afin de faire bénéficier vos services aux plus grand nombre",
+      "title": "On vous trouve un professionnel",
+      "text": "Votre demande de soins est envoyée aux professionnels de santé disponibles les plus proches de chez vous.",
       "route": "landing",
       "button": "Plus d'infos",
       "image": "health/images/info_2.jpg"
+    },
+    {
+      "title": "Le professionnel vous rappelle",
+      "text": "Une fois que votre demande de soins est confirmée par un professionel vous pourrez plannifier les visites à votre domicile.",
+      "route": "landing",
+      "button": "Plus d'infos",
+      "image": "health/images/hush-naidoo-pA0uoltkwao-unsplash.jpg"
     }
   ],
   "ProjectCTA": [
@@ -76,23 +84,23 @@
   "ProjectServices": [
     {
       "icon": "health/images/icon_1.svg",
-      "title": "Soins à domicile",
-      "text": "Injection, pensements, perfusions, prise de sang"
+      "title": "Professionnels de santé certifiés",
+      "text": "Libéraux diplômés d’État, conventionnés, expérimentés et enregistrés à l'ordre de leur profession."
     },
     {
       "icon": "health/images/icon_2.svg",
-      "title": "Assistance personnelle",
-      "text": "Aide pour la toilette et ou l'habillage des personnes agées ou à mobilité réduite"
+      "title": "Une présence globale en France",
+      "text": "Nous vous accompagnons partout en France dans l’organisation de vos soins à domicile, où que vous soyez."
     },
     {
       "icon": "health/images/icon_3.svg",
-      "title": "Medicaments",
-      "text": "Distribution et suivi de la prise de médicaments"
+      "title": "Un service gratuit",
+      "text": "Faites votre demande de soins à domicile en toute autonomie et trouver une infirmière libérale, un kiné libéral ou une sage-femme libérale disponible proche de chez vous en moins d’une heure. Vos données sont hébergées sur des serveurs sécurisés et agréés."
     },
     {
       "icon": "health/images/icon_4.svg",
-      "title": "Suivi Personnel",
-      "text": "Surveillance des constantes (tension, poul, température)"
+      "title": "Service patient réactif et disponible",
+      "text": "Nous sommes à votre écoute pour répondre à vos questions et vous accompagner au mieux dans l’organisation de vos soins à domicile."
     },
     {
       "icon": "health/images/icon_5.svg",

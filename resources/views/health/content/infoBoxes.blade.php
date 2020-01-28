@@ -20,11 +20,11 @@
       @endforeach
 
       <!-- Info Form -->
-      <div class="col-lg-4 info_box_col">
+      {{-- <div class="col-lg-4 info_box_col">
         <div class="info_form_container">
           <div class="info_form_title text-center">Votre besoin</div>
           <form action="#" class="info_form" id="info_form">
-            {{-- <select name="info_form_dep" id="info_form_dep" class="info_form_dep info_input info_select">
+            <select name="info_form_dep" id="info_form_dep" class="info_form_dep info_input info_select">
               <option value="infirmier">Infirmier</option>
               <option value="sagefemme">Sage Femme</option>
               <option value="kinesitherapeute">Kinésithérapeute</option>
@@ -36,15 +36,13 @@
             </select>
             <input type="text" class="info_input" placeholder="Nom" required="required">
             <input type="tel" class="info_input" placeholder="Numéro de téléphone" required="required">
-            <input type="mail" class="info_input" placeholder="E mail"> --}}
+            <input type="mail" class="info_input" placeholder="E mail">
+            </a>
 
-            <button class="info_form_button">Infirmier</button>
-            <button class="info_form_button">Sage-femme</button>
-            <button class="info_form_button">Kinésithérapeute</button>
-            {{-- <a href="#" class="inscrit">Déja Inscrit ?</a> --}}
+            <a href="#" class="inscrit">Déja Inscrit ?</a>
           </form>
         </div>
-      </div>
+      </div> --}}
     </div>
   </div>
 </div>

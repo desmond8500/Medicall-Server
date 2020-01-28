@@ -33,6 +33,8 @@ Route::get('/registering', 'LandingController@register')->name('registering');
 
 Route::get('/help', 'LandingController@contact')->name('help');
 
+Route::get('/choix/{service?}', 'ServiceController@servicesChoose')->name('servicesChoose');
+
 // Réseaux sociaux
 Route::get('facebook', function(){
   return redirect('https://web.facebook.com/?_rdc=1&_rdr');

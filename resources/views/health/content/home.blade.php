@@ -6,6 +6,7 @@
         <div class="home_content">
           <div class="home_title">{{ $home->title }}</div>
           <div class="home_text">{{ $home->text }}</div>
+          <div class="home_text">{{ $home->text2 }}</div>
           <div class="button home_button"><a href="{!! route('help') !!}"><span>{{ $project->ProjectHomeContent[0]->button }}</span><span>{{ $project->ProjectHomeContent[0]->button }}</span></a></div>
         </div>
       </div>
