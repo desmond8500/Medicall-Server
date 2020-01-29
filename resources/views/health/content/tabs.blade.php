@@ -33,12 +33,22 @@
                   <div class="tab_list">
                     <ul>
                       <li>
-                        <div class="tab_list_title">Cardiology</div>
-                        <div class="tab_list_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuad.</p></div>
+                        <div class="tab_list_title">Soins à domicile</div>
+                        <div class="tab_list_text"><p>
+                          Grace à notre plateforme vous pouvez trouver un professionel de santé qui puisse prodiguer
+                          des soins à vous et à vos proches à domicile.
+                        </p></div>
                       </li>
                       <li>
-                        <div class="tab_list_title">Gastroenterology</div>
-                        <div class="tab_list_text"><p>Donec malesuada lorem maximus mauris scele risque, at rutrum nulla dictum.</p></div>
+                        <div class="tab_list_title">Application Web et Mobile</div>
+                        <div class="tab_list_text"><p>
+                          Nous avons developpé une application web et mobile qui vous permet de :
+                          <ul>
+                            <li>Trouver des infirmiers en ligne</li>
+                            <li>De suivre et de gérer les traitements à travers votre compte </li>
+                            <li>Consulter ou donner des avis</li>
+                          </ul>
+                        </p></div>
                       </li>
                       <li>
                         <div class="tab_list_title">Medical Lab</div>
@@ -57,12 +67,22 @@
               <div class="tab_list">
                 <ul>
                   <li>
-                    <div class="tab_list_title">Cardiology</div>
-                    <div class="tab_list_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuad.</p></div>
+                    <div class="tab_list_title">Vous travaillez dans le domaine médical ?</div>
+                    <div class="tab_list_text">
+                      <p>
+                        Vous pouvez rehoindre notre équipe et faire profiter de vos services à des
+                        milliers de patients à travers le pays.
+                      </p>
+                    </div>
                   </li>
                   <li>
-                    <div class="tab_list_title">Gastroenterology</div>
-                    <div class="tab_list_text"><p>Donec malesuada lorem maximus mauris scele risque, at rutrum nulla dictum.</p></div>
+                    <div class="tab_list_title">Interface de gestion</div>
+                    <div class="tab_list_text">
+                      <p>
+                        Nous mettons à disposition du personnel médical une plateforme personnalisée qui permet
+                        de gérer les patients et de les assister dans l'exécution de leur taches.
+                      </p>
+                    </div>
                   </li>
                   <li>
                     <div class="tab_list_title">Medical Lab</div>
