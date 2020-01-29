@@ -21,3 +21,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('commentaires', 'CommentaireAPIController');
 
 Route::resource('comptes', 'CompteAPIController');
+
+
+
+
+
+Route::resource('articles', 'ArticleAPIController');

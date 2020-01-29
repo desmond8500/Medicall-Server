@@ -16,10 +16,22 @@
 
               <!-- Slide -->
               <div class="owl-item dept_item">
-                <div class="dept_image"><img src="health/images/dept_1.jpg" alt=""></div>
+                <div class="dept_image">
+                  {{-- <img src="health/images/dept_1.jpg" alt=""> --}}
+                </div>
                 <div class="dept_content">
                   <div class="dept_title">Neonatology</div>
                   <div class="dept_link"><a href="#">Read More</a></div>
+                  <ul type="*">
+                    <li>Pansements simples et complexes</li>
+                    <li>Injections (anticoagulants, antibiotiques, vitamines, anti-inflammatoires, vaccins...)</li>
+                    <li>Ablation de points de suture ou d'agrafes</li>
+                    <li>Perfusions</li>
+                    <li>Aide à la toilette et à l'habillage</li>
+                    <li>Surveillance traitement et préparation de pilulier</li>
+                    <li>Prise en charge des patients diabétiques, surveillance glycémie et insuline</li>
+                    <li>Prise de sang (bilan, test HIV...)</li>
+                  </ul>
                 </div>
               </div>
 

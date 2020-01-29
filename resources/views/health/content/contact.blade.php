@@ -7,12 +7,12 @@
         @include('health.content.message',['titre'=>'Laissez nous un message'])
       </div>
       <!-- Make an Appointment -->
-      <div class="col-lg-4 contact_col">
+      {{-- <div class="col-lg-4 contact_col">
         @include('health.content.rv',[
           'title' => 'Prendre un rendez-vous',
           'personnel' => ['medecin', 'infirmier', 'sage-femme']
         ])
-      </div>
+      </div> --}}
 
     </div>
   </div>

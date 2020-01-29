@@ -29,6 +29,9 @@
   <!-- Services -->
   @include('health.content.services')
 
+  <!-- Boxes -->
+  {{-- @include('health.content.infoBoxes1') --}}
+
 
   <!-- Departments -->
   {{-- @include('health.departement') --}}

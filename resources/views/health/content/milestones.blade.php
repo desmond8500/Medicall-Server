@@ -8,7 +8,7 @@
           <div class="milestone_icon d-flex flex-column align-items-center justify-content-center"><img src="{!! asset('health/images/icon_7.svg') !!}" alt=""></div>
           <div class="milestone_content">
             <div class="milestone_counter" data-end-value="365">0</div>
-            <div class="milestone_text">Days a year</div>
+            <div class="milestone_text">Jours</div>
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@
           <div class="milestone_icon d-flex flex-column align-items-center justify-content-center"><img src="{!! asset('health/images/icon_6.svg') !!}" alt=""></div>
           <div class="milestone_content">
             <div class="milestone_counter" data-end-value="25" data-sign-after="k">0</div>
-            <div class="milestone_text">Patients a year</div>
+            <div class="milestone_text">Patients par année</div>
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@
           <div class="milestone_icon d-flex flex-column align-items-center justify-content-center"><img src="{!! asset('health/images/icon_8.svg') !!}" alt=""></div>
           <div class="milestone_content">
             <div class="milestone_counter" data-end-value="125">0</div>
-            <div class="milestone_text">Amazing Doctors</div>
+            <div class="milestone_text">professionels</div>
           </div>
 
         </div>
@@ -42,7 +42,7 @@
           <div class="milestone_icon d-flex flex-column align-items-center justify-content-center"><img src="{!! asset('health/images/icon_9.svg') !!}" alt=""></div>
           <div class="milestone_content">
             <div class="milestone_counter" data-end-value="12" data-sign-after="k">0</div>
-            <div class="milestone_text">Lab Results</div>
+            <div class="milestone_text">Cas traités</div>
           </div>
         </div>
       </div>

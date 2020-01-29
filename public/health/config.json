@@ -64,11 +64,11 @@
       "text": "Votre demande de soins est envoyée aux professionnels de santé disponibles les plus proches de chez vous.",
       "route": "landing",
       "button": "Plus d'infos",
-      "image": "health/images/info_2.jpg"
+      "image": "health/images/christina-wocintechchat-com-UcZcsHSp8o4-unsplash.jpg"
     },
     {
       "title": "Le professionnel vous rappelle",
-      "text": "Une fois que votre demande de soins est confirmée par un professionel vous pourrez plannifier les visites à votre domicile.",
+      "text": "Une fois que votre demande est confirmée par un professionel vous pourrez plannifier les visites à votre domicile.",
       "route": "landing",
       "button": "Plus d'infos",
       "image": "health/images/hush-naidoo-pA0uoltkwao-unsplash.jpg"
@@ -101,16 +101,6 @@
       "icon": "health/images/icon_4.svg",
       "title": "Service patient réactif et disponible",
       "text": "Nous sommes à votre écoute pour répondre à vos questions et vous accompagner au mieux dans l’organisation de vos soins à domicile."
-    },
-    {
-      "icon": "health/images/icon_5.svg",
-      "title": "Assistance d'urgence",
-      "text": "Intervention rapide en cas d'urgence"
-    },
-    {
-      "icon": "health/images/icon_6.svg",
-      "title": "Autres Soins",
-      "text": "Tout type des soins pouvant être fait à dmicile"
     }
   ]
 }
