@@ -13,10 +13,10 @@ class LandingController extends Controller {
         [
           { "titre": "Vous avez besoin d\'assistance ?", "description": "Prenez-rendez vous avec notre équipe de professionels" },
           { "titre": "Intégrez notre équipe", "description": "Vous êtes un professionel de la santé ? Vous pouvez nous rejoindre" },
-          { "titre": "Notre application Mobile", "description": "Télécharger notre application mobile pour bénéficier de services supplémentaires" },
-          { "titre": "Section 4", "description": "Description" }
+          { "titre": "Notre application Mobile", "description": "Télécharger notre application mobile pour bénéficier de services supplémentaires" }
         ]
       ');
+      // { "titre": "Section 4", "description": "Description" }
 
       $tabs = [ $tabMenu ];
       return view('health.pages.acceuil', compact('project', 'tabs'));
