@@ -45,3 +45,8 @@ Route::resource('comptes', 'CompteController');
 Route::resource('articles', 'ArticleController');
 
 Route::get('/patient', 'PatientController@index')->name('patient');
+Route::get('/rv', 'PatientController@rv')->name('rv');
+Route::get('/message', 'PatientController@message')->name('message');
+Route::get('/bilan', 'PatientController@bilan')->name('bilan');
+Route::get('/profile', 'PatientController@profile')->name('profile');
+Route::get('/document', 'PatientController@document')->name('document');

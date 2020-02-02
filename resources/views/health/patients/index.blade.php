@@ -8,33 +8,47 @@
 {{-- ===================================================================== --}}
   <div class="col-md-8">
     <h5>Nouvelles demandes</h5>
-    <div class="card">
-      <div class="card-body">
-
-        <div class="row">
-          <div class="col-md-2">
-            AUG 30 <br>
-            Depuis 2 jours
-          </div>
-          <div class="col-md-7">
-            Nouvelle demande de rendez-vous de patient <br>
-            bl abla
-          </div>
-          <div class="col-md-3">
-            <button type="button" class="btn btn-primary " name="button">Confirmer</button>
+    @foreach ($demandes as $key => $demande)
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3">
+              {{ $demande->date }}<br>
+              <span class="text-secondary">{{ $demande->duree }}</span>
+            </div>
+            <div class="col-md-6">
+              {{ $demande->titre }} <br>
+              <span class="text-secondary">{{ $demande->description }}</span>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-outline-success" name="button">Confirmer</button>
+            </div>
           </div>
         </div>
-
-
       </div>
-    </div>
+    @endforeach
 
     <h5>Notifications</h5>
-    <div class="card">
-      <div class="card-body">
-        qsdqs
+    @foreach ($notifications as $key => $notification)
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+              <div class="col-md-1">
+                <i class="fa fa-{{ $notification->icon }}"></i>
+              </div>
+              <div class="col-md-9">
+                {{ $notification->titre }} <br>
+                {{ $notification->description }}
+              </div>
+              <div class="col-md-2">
+                <button class="btn btn-outline-secondary">
+                  <i class="fa fa-times"></i>
+                </button>
+              </div>
+          </div>
+        </div>
       </div>
-    </div>
+    @endforeach
 
   </div>
 
@@ -43,7 +57,12 @@
     <h5>Liens rapides</h5>
     <div class="card">
       <div class="card-body">
-        qsdqs
+        <ul>
+          <li>Prendre un rendez-vous</li>
+          <li>Envoyer un message</li>
+          <li>Résumé clinique</li>
+          <li>Resultats de laboratoire</li>
+        </ul>
       </div>
     </div>
   </div>

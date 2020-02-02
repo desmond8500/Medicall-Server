@@ -1,18 +1,24 @@
-{{-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> --}}
-
-
 <link rel="stylesheet" href="{!! asset('health/navbar.css') !!}">
 
 @php
   $menus = json_decode('[
-    { "title": "Dashboard", "icon": "fa-tachometer" },
-    { "title": "Rendez-vous", "icon": "fa-calendar" },
-    { "title": "Message", "icon": "fa-comments" },
-    { "title": "Mon Bilan", "icon": "fa-heart" },
-    { "title": "Mon profile", "icon": "fa-user" },
-    { "title": "Mes documents", "icon": "fa-file" }
+    { "route": "patient", "title": "Dashboard", "icon": "fa-tachometer" },
+    { "route": "rv", "title": "Rendez-vous", "icon": "fa-calendar" },
+    { "route": "message", "title": "Message", "icon": "fa-comments" },
+    { "route": "bilan", "title": "Mon Bilan", "icon": "fa-heart" },
+    { "route": "profile", "title": "Mon profile", "icon": "fa-user" },
+    { "route": "document", "title": "Mes documents", "icon": "fa-file" }
+    ]');
+
+  $menuMedecin = json_decode('[
+    { "route": "dashboard", "title": "Dashboard", "icon": "fa-th-large" },
+    { "route": "patients", "title": "Dashboard", "icon": "fa-tachometer" },
+    { "route": "programme", "title": "Rendez-vous", "icon": "fa-calendar" },
+    { "route": "message", "title": "Message", "icon": "fa-comments" },
+    { "route": "analyse", "title": "Mon Bilan", "icon": "fa-heart" },
+    { "route": "rapports", "title": "Mon profile", "icon": "fa-user" },
+    { "route": "facturation", "title": "Mes documents", "icon": "fa-file" },
+    { "route": "reglages", "title": "Mes documents", "icon": "fa-file" }
     ]');
 
 
@@ -27,7 +33,7 @@
     <ul class="navbar-nav mr-auto">
       @foreach ($menus as $key => $menu)
         <li class="nav-item active">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="{!! route($menu->route) !!}">
             <i class="fa {{ $menu->icon }}"></i>
             {{ $menu->title }}
             <span class="sr-only">(current)</span>
