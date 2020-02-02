@@ -13,7 +13,7 @@
 
         <div class="row">
           <div class="col-md-12">
-            <img src="{!! asset('health/images/about_1.jpg') !!}" alt="" class="img-fluid">
+            <img src="{!! asset('health/images/clive-surreal-9kQBQqY_xrk-unsplash.jpg') !!}" alt="" class="img-fluid">
           </div>
 
           <div class="col-md-12">
@@ -61,7 +61,7 @@
         </div>
       </div>
 
-    
+
       <h5>Traimements actuels</h5>
       <div class="card">
         <div class="card-body">
