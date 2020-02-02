@@ -27,9 +27,8 @@
     { "name": "linkedin", "route": "linkedin" }
   ],
   "ProjectAssistance": [
-    { "route": "landing", "value": "Nos professionels" },
-    { "route": "landing", "value": "Aide" },
-    { "route": "landing", "value": "" }
+    { "route": "landing", "value": "Interface professionel" },
+    { "route": "patient", "value": "Interface Patients" }
   ],
   "ProjectFooter": [
     {

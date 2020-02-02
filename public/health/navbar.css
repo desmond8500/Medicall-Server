@@ -117,6 +117,28 @@
 .backcolor{
   background: #2BABE3;
 }
+.tablebackcolor{
+  color: white;
+  background: #2BABE3;
+}
+.btncolor{
+  color: #2BABE3;
+  border: 1px solid #2BABE3;
+  background: none;
+}
+.btncolorfull{
+  color: white;
+  background: #2BABE3;
+}
+.btnwhite{
+  color: white;
+  border: 1px solid white;
+  background: none;
+}
+
+a{
+  color: #2BABE3;
+}
 
 body{
   background: #F9F9F9;

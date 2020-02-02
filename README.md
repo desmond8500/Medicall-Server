@@ -36,3 +36,7 @@
 * Autres soins
 
 ## Infirmier
+
+##  A faire
+
+* ajouter une barre sur le menus sélectionnés

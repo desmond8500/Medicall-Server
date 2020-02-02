@@ -22,7 +22,7 @@
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
           <table class="table">
-            <thead class="thead-dark">
+            <thead class="tablebackcolor">
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Date</th>

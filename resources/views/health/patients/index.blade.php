@@ -21,7 +21,7 @@
               <span class="text-secondary">{{ $demande->description }}</span>
             </div>
             <div class="col-md-3">
-              <button type="button" class="btn btn-outline-success" name="button">Confirmer</button>
+              <button type="button" class="btn btncolor" name="button">Confirmer</button>
             </div>
           </div>
         </div>

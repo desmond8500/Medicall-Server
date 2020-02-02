@@ -26,10 +26,10 @@
               </div>
               <div class="col-md-6">
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                  <button type="button" class="btn btn-success">Nouveau Message</button>
+                  <button type="button" class="btn btncolorfull">Nouveau Message</button>
 
                   <div class="btn-group" role="group">
-                    <button id="btnGroupDrop1" type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button id="btnGroupDrop1" type="button" class="btn btncolor dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Action
                     </button>
                     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">

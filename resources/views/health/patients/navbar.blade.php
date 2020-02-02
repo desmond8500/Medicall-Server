@@ -90,9 +90,14 @@
         </a>
       </li> --}}
     </ul>
-    {{-- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> --}}
+    <form class="form-inline my-2 my-lg-0">
+      {{-- <a href="{!! route('landing') !!}" class="form-inline my-2 my-lg-0">
+        <i class="fas fa-sign-out"></i> qsdqsd
+      </a> --}}
+      {{-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> --}}
+      <a href="{!! route('landing') !!}" class="btn btnwhite my-2 my-sm-0" >
+        <i class="fa fa-sign-out"></i> Deconnexion
+      </a>
+    </form>
   </div>
 </nav>

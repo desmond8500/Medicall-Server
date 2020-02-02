@@ -44,9 +44,19 @@ Route::resource('commentaires', 'CommentaireController');
 Route::resource('comptes', 'CompteController');
 Route::resource('articles', 'ArticleController');
 
+// User routes
 Route::get('/patient', 'PatientController@index')->name('patient');
 Route::get('/rv', 'PatientController@rv')->name('rv');
 Route::get('/message', 'PatientController@message')->name('message');
 Route::get('/bilan', 'PatientController@bilan')->name('bilan');
 Route::get('/profile', 'PatientController@profile')->name('profile');
 Route::get('/document', 'PatientController@document')->name('document');
+
+// Doctor routes
+Route::get('/dashboard', 'PatientController@dashboard')->name('dashboard');
+Route::get('/patients', 'PatientController@patients')->name('patients');
+Route::get('/programme', 'PatientController@programme')->name('programme');
+Route::get('/analyse', 'PatientController@analyse')->name('analyse');
+Route::get('/rapports', 'PatientController@rapports')->name('rapports');
+Route::get('/facturation', 'PatientController@facturation')->name('facturation');
+Route::get('/reglages', 'PatientController@reglages')->name('reglages');
