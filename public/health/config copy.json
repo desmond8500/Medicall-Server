@@ -1,0 +1,105 @@
+{
+  "ProjectName": "Medicall",
+  "ProjectNumber": "+221 77 837 23 90",
+  "ProjectHomeContent": [
+    {
+      "image": "health/images/matheus-ferrero-yfmjALh1S6s-unsplash.jpg",
+      "title": "Soins à domicile",
+      "text": "Medicall est une plateforme de mise en relation d'infirmiers avec des patients afin que ces derniers puissent bénéficier de soins à domicile.",
+      "text2": "C'est simple, c'est rapide, c'est pratique",
+      "button": "Plus d'infos",
+      "route": "help"
+    }
+  ],
+  "ProjectBackground": [
+    "health/images/index_hero.jpg"
+  ],
+  "ProjectMenu": [
+    { "name": "Acceuil", "route": "landing" },
+    { "name": "Services", "route": "services"  },
+    { "name": "Informations", "route": "news"  },
+    { "name": "A propos", "route": "about"  },
+    { "name": "Contact", "route": "contact" }
+  ],
+  "ProjectSocial": [
+    { "name": "facebook", "route": "facebook" },
+    { "name": "twitter", "route": "twitter" },
+    { "name": "linkedin", "route": "linkedin" }
+  ],
+  "ProjectAssistance": [
+    { "route": "landing", "value": "Interface professionel" },
+    { "route": "patient", "value": "Interface Patients" }
+  ],
+  "ProjectFooter": [
+    {
+      "image": "health/images/footer.jpg",
+      "text": "Vous pouvez nous laisser un message sur le formulaire à coté ...."
+    }
+  ],
+  "ProjectHoraires": [
+    {
+      "date": "Lundi au Vendredi",
+      "heure": "8.00 – 19.00"
+    },
+    {
+      "date": "Samedi",
+      "heure": "9.00 – 15.00"
+    },
+    {
+      "date": "Dimanche",
+      "heure": "9.00 – 13.00"
+    }
+  ],
+  "ProjectInfobox": [
+    {
+      "title": "Choisissez vos soins",
+      "text": "Laissez-vous guider par notre formulaire de demande de soins simple et rapide. Il vous faudra moins de 3 minutes pour le remplir.",
+      "route": "landing",
+      "button": "Plus d'infos",
+      "image": "health/images/meghan-schiereck-_XFObcM_7KU-unsplash.jpg"
+    },
+    {
+      "title": "On vous trouve un professionnel",
+      "text": "Votre demande de soins est envoyée aux professionnels de santé disponibles les plus proches de chez vous.",
+      "route": "landing",
+      "button": "Plus d'infos",
+      "image": "health/images/christina-wocintechchat-com-UcZcsHSp8o4-unsplash.jpg"
+    },
+    {
+      "title": "Le professionnel vous rappelle",
+      "text": "Une fois que votre demande est confirmée par un professionel vous pourrez plannifier les visites à votre domicile.",
+      "route": "landing",
+      "button": "Plus d'infos",
+      "image": "health/images/hush-naidoo-pA0uoltkwao-unsplash.jpg"
+    }
+  ],
+  "ProjectCTA": [
+    {
+      "image": "health/images/cta_1.jpg",
+      "title": "Inscrivez vous sur notre plateforme pour bénéficier de nos services",
+      "subtitle": "Vous pouvez utiliser notre plateforme en temps que professionel de la sante ou en tant que patient"
+    }
+  ],
+  "ProjectServices": [
+    {
+      "icon": "health/images/icon_1.svg",
+      "title": "Professionnels de santé certifiés",
+      "text": "Libéraux diplômés d’État, conventionnés, expérimentés et enregistrés à l'ordre de leur profession."
+    },
+    {
+      "icon": "health/images/icon_2.svg",
+      "title": "Une présence globale en France",
+      "text": "Nous vous accompagnons partout en France dans l’organisation de vos soins à domicile, où que vous soyez."
+    },
+    {
+      "icon": "health/images/icon_3.svg",
+      "title": "Un service gratuit",
+      "text": "Faites votre demande de soins à domicile en toute autonomie et trouver une infirmière libérale, un kiné libéral ou une sage-femme libérale disponible proche de chez vous en moins d’une heure. Vos données sont hébergées sur des serveurs sécurisés et agréés."
+    },
+    {
+      "icon": "health/images/icon_4.svg",
+      "title": "Service patient réactif et disponible",
+      "text": "Nous sommes à votre écoute pour répondre à vos questions et vous accompagner au mieux dans l’organisation de vos soins à domicile."
+    }
+  ]
+}

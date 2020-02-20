@@ -18,6 +18,7 @@
 
 @section('subcontent')
   <!-- Tabs -->
+  @include('health/component/modal')
   @include('health.content.tabs',['tabs'=>$tabs])
 
   <!-- Info Boxes -->

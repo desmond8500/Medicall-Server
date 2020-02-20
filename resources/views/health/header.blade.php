@@ -9,7 +9,7 @@
                 {{-- <a href="{!! route('landing') !!}">{{ $project->ProjectName }}</a> --}}
                 <img src="{!! asset('health/images/Logo/Logo.png') !!}" alt="" width="130px">
                 <br>
-                <span>Votre infirmier à domicile en un click</span>
+                <span>Votre infirmier à chez vous en un click</span>
               </div>
               <div class="header_top_extra d-flex flex-row align-items-center justify-content-start ml-auto">
                 <div class="header_top_nav">

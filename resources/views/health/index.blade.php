@@ -4,7 +4,7 @@
   <body>
     <div class="super_container">
     	<!-- Menu Mobile -->
-      @include('health.menu')
+      {{-- @include('health.menu') --}}
 
     	<!-- Home -->
     	<div class="home">
