@@ -17,6 +17,7 @@ Route::post(
 // My routes ===================================================================
 
 Route::get('/', 'LandingController@index')->name('landing');
+Route::get('/new', 'LandingController@new')->name('new');
 Route::get('/about', 'LandingController@about')->name('about');
 Route::get('/services', 'LandingController@services')->name('services');
 Route::get('/news', 'LandingController@news')->name('news');
