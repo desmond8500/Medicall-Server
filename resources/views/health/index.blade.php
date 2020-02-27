@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
-  @include('health.head', ['titre'=>$project->ProjectName])
+  @include('health.index.head', ['titre'=>$project->ProjectName])
   <body>
     <div class="super_container">
-    	<!-- Menu Mobile -->
-      {{-- @include('health.menu') --}}
+        @include('health.index.menu') {{-- XS menu --}}
 
-    	<!-- Home -->
     	<div class="home">
-    	<!-- Header -->
-        @yield('content')
+            @yield('content')
     	</div>
 
-      @yield('subcontent')
-
-    	<!-- Footer -->
+        @yield('subcontent')
     	@include('health.footer.footer')
     </div>
-
     @include('health.script')
   </body>
 </html>

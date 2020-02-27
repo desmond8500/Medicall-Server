@@ -20,29 +20,28 @@
       @endforeach
 
       <!-- Info Form -->
-      {{-- <div class="col-lg-4 info_box_col">
+      <div class="col-lg-4 info_box_col">
         <div class="info_form_container">
-          <div class="info_form_title text-center">Votre besoin</div>
+          <div class="info_form_title">Prendre un rendez-vous</div>
           <form action="#" class="info_form" id="info_form">
             <select name="info_form_dep" id="info_form_dep" class="info_form_dep info_input info_select">
               <option value="infirmier">Infirmier</option>
               <option value="sagefemme">Sage Femme</option>
               <option value="kinesitherapeute">Kinésithérapeute</option>
             </select>
-             <select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select">
-              <option>Doctor</option>
-              <option>Doctor</option>
-              <option>Doctor</option>
+            <select name="info_form_dep" id="info_form_dep" class="info_form_dep info_input info_select">
+              <option value="infirmier">Infirmier</option>
+              <option value="sagefemme">Sage Femme</option>
+              <option value="kinesitherapeute">Kinésithérapeute</option>
             </select>
+            <input type="text" class="info_input" placeholder="Prénom" required="required">
             <input type="text" class="info_input" placeholder="Nom" required="required">
             <input type="tel" class="info_input" placeholder="Numéro de téléphone" required="required">
-            <input type="mail" class="info_input" placeholder="E mail">
-            </a>
+            <button class="info_form_button">make an appointment</button>
 
-            <a href="#" class="inscrit">Déja Inscrit ?</a>
           </form>
         </div>
-      </div> --}}
+      </div>
     </div>
   </div>
 </div>

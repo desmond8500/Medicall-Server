@@ -1,6 +1,42 @@
 {
-  "ProjectName": "Medicall",
-  "ProjectNumber": "+221 77 837 23 90",
+    "ProjectName": "Medicall",
+    "ProjectNumber": "+221 77 837 23 90",
+    "ProjectMenu": [
+        {
+            "name": "Acceuil",
+            "route": "landing"
+        },
+        {
+            "name": "Services",
+            "route": "services"
+        },
+        {
+            "name": "Informations",
+            "route": "news"
+        },
+        {
+            "name": "A propos",
+            "route": "about"
+        },
+        {
+            "name": "Contact",
+            "route": "contact"
+        }
+    ],
+    "ProjectSocial": [
+        {
+            "name": "facebook",
+            "route": "facebook"
+        },
+        {
+            "name": "twitter",
+            "route": "twitter"
+        },
+        {
+            "name": "linkedin",
+            "route": "linkedin"
+        }
+    ],
   "ProjectHomeContent": [
     {
       "image": "health/images/matheus-ferrero-yfmjALh1S6s-unsplash.jpg",
@@ -13,18 +49,6 @@
   ],
   "ProjectBackground": [
     "health/images/index_hero.jpg"
-  ],
-  "ProjectMenu": [
-    { "name": "Acceuil", "route": "landing" },
-    { "name": "Services", "route": "services"  },
-    { "name": "Informations", "route": "news"  },
-    { "name": "A propos", "route": "about"  },
-    { "name": "Contact", "route": "contact" }
-  ],
-  "ProjectSocial": [
-    { "name": "facebook", "route": "facebook" },
-    { "name": "twitter", "route": "twitter" },
-    { "name": "linkedin", "route": "linkedin" }
   ],
   "ProjectAssistance": [
     { "route": "landing", "value": "Interface professionel" },
@@ -64,13 +88,6 @@
       "route": "landing",
       "button": "Plus d'infos",
       "image": "health/images/christina-wocintechchat-com-UcZcsHSp8o4-unsplash.jpg"
-    },
-    {
-      "title": "Le professionnel vous rappelle",
-      "text": "Une fois que votre demande est confirmée par un professionel vous pourrez plannifier les visites à votre domicile.",
-      "route": "landing",
-      "button": "Plus d'infos",
-      "image": "health/images/hush-naidoo-pA0uoltkwao-unsplash.jpg"
     }
   ],
   "ProjectCTA": [

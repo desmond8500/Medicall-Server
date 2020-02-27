@@ -18,8 +18,8 @@
 
 @section('subcontent')
   <!-- Tabs -->
-  @include('health/component/modal')
-  @include('health.content.tabs',['tabs'=>$tabs])
+  {{-- @include('health/component/modal') --}}
+  {{-- @include('health.content.tabs',['tabs'=>$tabs]) --}}
 
   <!-- Info Boxes -->
   @include('health.content.infoBoxes')
@@ -31,14 +31,14 @@
   @include('health.content.services')
 
   <!-- Boxes -->
-  {{-- @include('health.content.infoBoxes1') --}}
+  @include('health.content.infoBoxes1')
 
 
   <!-- Departments -->
-  {{-- @include('health.departement') --}}
+  @include('health.departement')
 
   <!-- FAQ & News -->
-  {{-- @include('health.faq') --}}
+  @include('health.faq')
 @endsection
 
 @section('script')
