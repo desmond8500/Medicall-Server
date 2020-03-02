@@ -11,8 +11,9 @@
     <div class="col-md-4">
         <div class="container">
             <p class="">
-                Medicall est une plateforme de mise en relation de d'infimiers avec des patients afin que ce derniers
-                puissent bénéficier de soins à domicile.
+                Medicall est un service d'assistance médicale à domicile. <br>
+                Nous mettons à votre disposition des infirmier et des sages femmes qui vont vous
+                aider à suivre votre traitement chez vous.
             </p>
             <a href="" class="btn btn-primary"> Plus d'informations</a>
         </div>

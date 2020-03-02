@@ -15,13 +15,19 @@
          +221 77 837 23 90
         </p>
     </div>
-    <div class="col-md-12 menu">
+    <div class="col-md-9 menu">
         <div class="row">
             @foreach ($menu as $item)
             <div class="col-md-1">
                 <a href="{!! route($item['route']) !!}" class="submenu">{{ strtoupper($item['name']) }}</a>
             </div>
             @endforeach
+        </div>
+    </div>
+    <div class="col-md-3 menu text-right">
+        <div class="container">
+            <a href="" class="btn btn-light color-primary">Connexion</a>
+        <a href="" class="btn btn-outline-light">Inscription</a>
         </div>
     </div>
 </div>

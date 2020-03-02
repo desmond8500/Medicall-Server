@@ -19,6 +19,7 @@
                     @endforeach
                   </ul>
                 </div>
+
                 <div class="header_top_phone">
                   <i class="fa fa-phone" aria-hidden="true"></i>
                   <span>{{ $project->phoneNumber }}</span>

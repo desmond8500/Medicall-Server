@@ -5,5 +5,7 @@
     <div class="separation"></div>
     @include('health.landing.content.calltoaction')
     <div class="separation"></div>
+    @include('health.landing.content.services')
+    <div class="separation"></div>
     @include('health.landing.content.contact')
 @endsection

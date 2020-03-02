@@ -34,6 +34,7 @@
                                 <option value="Infirmier">Infirmier</option>
                                 <option value="Sage-femme">Sage-femme</option>
                                 <option value="Kinésithérapeute">Kinésithérapeute</option>
+                                <option value="Aide-soignant">Aide-soignant</option>
                             </select>
                         </div>
                         <div class="form-group">
