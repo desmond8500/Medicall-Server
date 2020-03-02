@@ -21,7 +21,7 @@
                 </div>
                 <div class="header_top_phone">
                   <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span>{{ $project->ProjectNumber }}</span>
+                  <span>{{ $project->phoneNumber }}</span>
                 </div>
               </div>
               <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>

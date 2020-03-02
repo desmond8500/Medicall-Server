@@ -35,7 +35,7 @@
             </div>
             <div class="footer_phone ml-lg-auto">
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>{{ $project->ProjectNumber }}</span>
+              <span>{{ $project->phoneNumber }}</span>
             </div>
           </div>
         </div>

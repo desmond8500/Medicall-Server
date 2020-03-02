@@ -1,6 +1,7 @@
 {
     "ProjectName": "Medicall",
-    "ProjectNumber": "+221 77 837 23 90",
+    "phoneNumber": "+221 77 837 23 90",
+    "projectLogo": "health/images/Logo/Logo.png",
     "ProjectMenu": [
         {
             "name": "Acceuil",

@@ -1,5 +1,13 @@
 <?php
 
+// ===========================================================
+// Landing page
+// ===========================================================
+Route::get('/', 'HealthController@index')->name('health');
+
+
+
+
 // InfyOm
 Auth::routes();
 
@@ -16,7 +24,7 @@ Route::post(
 
 // My routes ===================================================================
 
-Route::get('/', 'LandingController@index')->name('landing');
+Route::get('/landing', 'LandingController@index')->name('landing');
 Route::get('/new', 'LandingController@new')->name('new');
 Route::get('/about', 'LandingController@about')->name('about');
 Route::get('/services', 'LandingController@services')->name('services');

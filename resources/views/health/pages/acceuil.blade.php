@@ -12,7 +12,7 @@
 @section('content')
   <div class="background_image" style="background-image:url({!! asset($project->ProjectHomeContent[0]->image) !!})"></div>
 
-  @include('health.header')
+  @include('health.index.header')
   @include('health.content.home',['home'=> $project->ProjectHomeContent[0]]);
 @endsection
 

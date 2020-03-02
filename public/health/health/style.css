@@ -1,0 +1,38 @@
+.logo{
+    margin-left: 30px;
+    color: grey;
+}
+
+.moto{
+    padding-left: 30px;
+}
+
+.tel{
+    padding-top: 25px;
+    padding-right: 30px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.telicon{
+    color: #2BABE3;
+}
+.menu{
+    background: #2BABE3;
+    height: 80px;
+    padding-top: 25px;
+}
+
+.submenu{
+    text-align: center;
+    color: white;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.separation{
+    height: 30px;
+    width: 100px;
+    background: black;
+}
