@@ -4,4 +4,6 @@
     @include('health.landing.content.carousel')
     <div class="separation"></div>
     @include('health.landing.content.calltoaction')
+    <div class="separation"></div>
+    @include('health.landing.content.contact')
 @endsection
