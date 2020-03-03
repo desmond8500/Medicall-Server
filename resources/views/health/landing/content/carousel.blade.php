@@ -10,7 +10,8 @@
 <div class="row">
     <div class="col-md-4">
         <div class="container">
-            <p class="">
+            <p>
+                <h3>Qui Sommes-Nous ?</h3>
                 Medicall est un service d'assistance médicale à domicile. <br>
                 Nous mettons à votre disposition des infirmier et des sages femmes qui vont vous
                 aider à suivre votre traitement chez vous.

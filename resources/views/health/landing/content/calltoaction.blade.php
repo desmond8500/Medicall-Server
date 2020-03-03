@@ -1,31 +1,34 @@
-<div class="container">
+<div class="container ">
     <div class="row">
         <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card w-150">
                 <img src="{{ asset('health/images/meghan-schiereck-_XFObcM_7KU-unsplash.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body bg-light">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">S'inscrire</a>
+                    <h5 class="card-title">Utilisateurs</h5>
+                    <p class="card-text text-justify">
+                        Vous pouvez nous contacter par téléphone, par message ou par mail afin de pouvoir bénéficier des services
+                        de l'infirmier le plus proche de chez vous pour vous ou vos proches.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-block">S'inscrire</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card w-150">
                 <img src="{{ asset('health/images/hush-naidoo-pA0uoltkwao-unsplash.jpg') }}" class="card-img-top" alt="...">
                 <div class="card-body bg-light">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">S'inscrire</a>
+                    <h5 class="card-title">Professionel de la santé</h5>
+                    <p class="card-text text-justify">
+                        Si vous êtes infirmier, Sage-femme, aide soignant ou kinésithérapeute vous pouvez rejoindre notre équipe de professionels.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-block">Rejoignez-nous</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    Prendre un rendez-vous
-                </div>
-                <div class="card-body">
+            <div class="card w-150">
+                <div class="card-body bg-light">
+                    <h5 class="text-center">Prendre un rendez-vous</h5>
                     <form action="/rendezvous" method="post">
                         @csrf
                         <div class="form-group">
@@ -45,7 +48,7 @@
                             <label>Téléphone</label>
                             <input type="text" class="form-control" name="tel">
                         </div>
-                        <button type="submit" class="btn btn-primary">Valider</button>
+                        <button type="submit" class="btn btn-primary btn-block">Valider</button>
                     </form>
                 </div>
             </div>
