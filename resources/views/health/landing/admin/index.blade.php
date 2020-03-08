@@ -15,7 +15,7 @@
                                 <b class="text-primary">{{ $item['nombre'] }}</b>
                             </h5>
                             <p class="card-text">{{$item['description'] }}</p>
-                            <a href="{{ route($item['route']) }}" class="btn btn-primary">Consulter</a>
+                            <a href="{{ route('adminlist',[ 'categorie' => $item['route'] ]) }}" class="btn btn-primary">Consulter</a>
                         </div>
                     </div>
                 </div>

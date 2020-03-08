@@ -8,7 +8,7 @@
             <th> Nom</th>
             <th> Téléphone</th>
             <th> Email</th>
-            <th>Role</th>
+            <th>Personnel</th>
             <th>Edit</th>
             </tr>
         </thead>
@@ -19,7 +19,7 @@
                 <td>{{ $user->prenom }} {{ $user->nom }}</td>
                 <td>{{ $user->tel }}</td>
                 <td>{{ $user->email }}</td>
-                <td>{{ $user->role }}</td>
+                <td>{{ $user->personnel }}</td>
                 <td>
                     <i class="fa fa-edit"></i>
                     <i class="fa fa-delete"></i>

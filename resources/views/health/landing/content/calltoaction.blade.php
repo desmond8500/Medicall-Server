@@ -41,7 +41,7 @@
                 <div class="card-body bg-light">
                     <h5 class="text-center">Prendre un rendez-vous</h5>
                     <hr>
-                    <form action="/rendezvous" method="post">
+                    <form action="/rendezvouses" method="post">
                         @csrf
                         <div class="form-group">
                             <label></label>
@@ -62,7 +62,7 @@
                         </div>
                         <div class="form-group">
                             <label>E mail</label>
-                            <input type="mail" class="form-control" name="tel" placeholder="Email / Facultatif">
+                            <input type="email" class="form-control" name="email" placeholder="Email / Facultatif">
                         </div>
                         <div class=" form-group formulaire">
                         </div>

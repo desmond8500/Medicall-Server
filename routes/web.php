@@ -13,7 +13,7 @@ Route::get('/quit', 'HealthController@logout')->name('quit');
 // Admin page
 // ==================================================================================
 Route::get('/admin', 'AdminController@index')->name('admin');
-Route::get('/userlist', 'HealthController@userlist')->name('userlist');
+Route::get('/adminlist/{categorie?}', 'AdminController@adminlist')->name('adminlist');
 
 
 
@@ -88,3 +88,6 @@ Route::get('/reglages', 'PatientController@reglages')->name('reglages');
 
 
 Route::resource('commentaires', 'CommentaireController');
+
+
+Route::resource('rendezvouses', 'RendezvousController');

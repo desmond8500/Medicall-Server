@@ -20,17 +20,17 @@
 
         </div>
         <div class="col-md-6">
-            <form action="/comentaires" method="post" class="row">
+            <form action="/commentaires" method="post" class="row">
                 @csrf
                 <div class="col-md-4">
                     <div class="form-group">
                         <input type="text" class="form-control" name="nom" placeholder="Nom">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="tel" placeholder="Téléphone">
+                        <input type="tel" class="form-control" name="tel" placeholder="Téléphone">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="tel" placeholder="Email">
+                        <input type="email" class="form-control" name="mail" placeholder="Email">
                     </div>
                 </div>
 

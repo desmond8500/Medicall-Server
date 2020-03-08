@@ -60,7 +60,7 @@ class CommentaireController extends AppBaseController
 
         Flash::success('Commentaire saved successfully.');
 
-        return redirect(route('commentaires.index'));
+        return redirect(route('health'));
     }
 
     /**

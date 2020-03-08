@@ -18,3 +18,9 @@
         <span>Articles</span>
     </a>
 </li>
+<li class="nav-item {{ Request::is('rendezvouses*') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('rendezvouses.index') }}">
+        <i class="nav-icon icon-cursor"></i>
+        <span>Rendezvouses</span>
+    </a>
+</li>
