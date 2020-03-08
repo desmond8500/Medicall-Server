@@ -16,6 +16,19 @@ class AdminController extends Controller
         $project = json_decode(file_get_contents('health/config.json'));
         return view('health.landing.admin.index',compact('project'));
     }
+    public function admininit()
+    {
+        $user = new User();
+        $user->prenom = "admin";
+        $user->nom = "admin";
+        $user->tel = "0000";
+        $user->email = "admin@admin.com";
+        $user->password = Hash::make('passer');
+        $user->role = "admin";
+        $user->save();
+
+        return redirect()->route('health');
+    }
 
     public function index()
     {

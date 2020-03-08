@@ -13,6 +13,7 @@ Route::get('/quit', 'HealthController@logout')->name('quit');
 // Admin page
 // ==================================================================================
 Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/admininit', 'AdminController@admininit')->name('admininit');
 Route::get('/adminlist/{categorie?}', 'AdminController@adminlist')->name('adminlist');
 
 
