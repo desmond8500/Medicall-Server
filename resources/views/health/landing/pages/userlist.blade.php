@@ -18,7 +18,7 @@
                 <td>{{ $key +1 }}</td>
                 <td>{{ $user->prenom }} {{ $user->nom }}</td>
                 <td>{{ $user->tel }}</td>
-                <td>{{ $user->mail }}</td>
+                <td>{{ $user->email }}</td>
                 <td>{{ $user->role }}</td>
                 <td>
                     <i class="fa fa-edit"></i>

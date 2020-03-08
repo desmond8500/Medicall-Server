@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-md-4">
         <a href="{!! route('health') !!}" class="logo">
-            <img src="{{ asset($page->logo) }}" alt="{{ asset($page->logo) }}" height="40px">
+            <img src="{{ asset('health/images/Logo/Logo.png') }}" alt="{{ asset('health/images/Logo/Logo.png') }}" height="40px">
             <p class="moto">Votre infirmier chez vous en un click</p>
         </a>
     </div>
@@ -22,6 +22,13 @@
                 <a href="{!! route($item['route']) !!}" class="submenu">{{ strtoupper($item['name']) }}</a>
             </div>
             @endforeach
+            @isset($user)
+                @if ($user->role == 'admin')
+                <div class="col-md-1">
+                    <a href="{!! route('admin') !!}" class="submenu">Administration</a>
+                </div>
+                @endif
+            @endisset
         </div>
     </div>
     <div class="col-xs-6 col-md-3 menu text-right">

@@ -12,44 +12,28 @@ class HealthController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $page = json_decode('{
-            "logo": "health/images/Logo/Logo.png"
-        }');
 
-        return view('health.landing.pages.index',compact('page','user'));
+
+        return view('health.landing.pages.index',compact('user'));
     }
     public function login()
     {
-        $page = json_decode('{
-            "logo": "health/images/Logo/Logo.png"
-        }');
 
-        return view('health.landing.pages.login',compact('page'));
+
+        return view('health.landing.pages.login');
     }
     public function logout()
     {
-        $page = json_decode('{
-            "logo": "health/images/Logo/Logo.png"
-        }');
-
         Auth::logout();
 
         return redirect()->route('health');
     }
-    public function register()
+    public function register($role = 'user')
     {
-        $page = json_decode('{
-            "logo": "health/images/Logo/Logo.png"
-        }');
-
-        return view('health.landing.pages.register',compact('page'));
+        return view('health.landing.pages.register',compact('role'));
     }
     public function registering(Request $request)
     {
-        $page = json_decode('{
-            "logo": "health/images/Logo/Logo.png"
-        }');
-
         $user = new User();
 
         $user->prenom = $request->prenom;
@@ -57,22 +41,26 @@ class HealthController extends Controller
         $user->tel = $request->tel;
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
-        $user->role = 'user';
+        $user->role = $request->role;
         $user->save();
-
-        //dump($user);
 
         return redirect()->route('health');
     }
     public function userlist()
     {
-        $page = json_decode('{
-            "logo": "health/images/Logo/Logo.png"
-        }');
+
 
         $users = User::all();
 
-        return view('health.landing.pages.userlist',compact('users','page'));
+        return view('health.landing.pages.userlist',compact('users',));
+    }
+    public function adminpage()
+    {
+
+
+        $users = User::all();
+
+        return view('health.landing.pages.userlist',compact('users',));
     }
 
 

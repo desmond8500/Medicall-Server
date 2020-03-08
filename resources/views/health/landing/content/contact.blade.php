@@ -1,4 +1,6 @@
-<div class="container contactBloc">
+
+
+<div class="container">
     <div class="row">
         <div class="col-md-6">
             <h3>Medicall</h3>
@@ -6,6 +8,15 @@
                 Vous pouvez nous laisser un message sur le formulaire à coté ....
             </p>
             <p>Rejoiniez nous sour les réseaux sociaux suivants :</p>
+            <a href="" class="text-white">
+                <i class="fa fa-facebook btn"></i>
+            </a>
+            <a href="" class="text-white">
+                <i class="fa fa-twitter btn"></i>
+            </a>
+            <a href="" class="text-white">
+                <i class="fa fa-linkedin btn"></i>
+            </a>
 
         </div>
         <div class="col-md-6">
@@ -28,7 +39,7 @@
                         <textarea name="message" class="form-control" placeholder="Votre messsage"></textarea>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                        <button type="submit" class="btn btn-light">Envoyer</button>
                     </div>
 
                 </div>

@@ -19,6 +19,7 @@
         <div class="col-md-4 offset-md-4">
             <form action="/registering" method="POST">
                 @csrf
+                <input type="text" class="form-control" name="role" hidden value="{{ $role }} ">
                 <div class="form-group">
                     <label>Prénom</label>
                     <input type="text" class="form-control" name="prenom" placeholder="Prénom">
