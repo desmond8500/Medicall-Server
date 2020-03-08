@@ -7,6 +7,7 @@ Route::get('/', 'HealthController@index')->name('health');
 Route::get('/healthlogin', 'HealthController@login')->name('healthlogin');
 Route::get('/healthregister', 'HealthController@register')->name('healthregister');
 Route::post('/registering', 'HealthController@registering')->name('registering');
+Route::get('/quit', 'HealthController@logout')->name('quit');
 
 // ==================================================================================
 // Admin page

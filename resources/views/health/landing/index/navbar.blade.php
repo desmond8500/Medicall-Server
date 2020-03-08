@@ -26,8 +26,12 @@
     </div>
     <div class="col-xs-6 col-md-3 menu text-right">
         <div class="container">
-            <a href="{{ route('healthlogin')}}" class="btn btn-light color-primary">Connexion</a>
-            <a href="{{ route('healthregister')}} " class="btn btn-outline-light">Inscription</a>
+            @isset($user)
+                <a href="{{ route('quit')}}" class="btn btn-light color-primary">Déconnexion</a>
+            @else
+                <a href="{{ route('healthlogin')}}" class="btn btn-light color-primary">Connexion</a>
+                <a href="{{ route('healthregister')}} " class="btn btn-outline-light">Inscription</a>
+            @endisset
         </div>
     </div>
 </div>

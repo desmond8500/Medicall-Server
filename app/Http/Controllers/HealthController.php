@@ -16,7 +16,7 @@ class HealthController extends Controller
             "logo": "health/images/Logo/Logo.png"
         }');
 
-        return view('health.landing.pages.index',compact('page'));
+        return view('health.landing.pages.index',compact('page','user'));
     }
     public function login()
     {
@@ -25,6 +25,16 @@ class HealthController extends Controller
         }');
 
         return view('health.landing.pages.login',compact('page'));
+    }
+    public function logout()
+    {
+        $page = json_decode('{
+            "logo": "health/images/Logo/Logo.png"
+        }');
+
+        Auth::logout();
+
+        return redirect()->route('health');
     }
     public function register()
     {

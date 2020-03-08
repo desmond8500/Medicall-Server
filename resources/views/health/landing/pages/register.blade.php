@@ -2,5 +2,4 @@
 
 @section('content')
     @include('health.landing.content.registerform')
-    <div class="separation"></div>
 @endsection

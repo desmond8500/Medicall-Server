@@ -21,23 +21,23 @@
                 @csrf
                 <div class="form-group">
                     <label>Prénom</label>
-                    <input type="text" class="form-control" name="prenom">
+                    <input type="text" class="form-control" name="prenom" placeholder="Prénom">
                 </div>
                 <div class="form-group">
                     <label>Nom</label>
-                    <input type="text" class="form-control" name="nom">
+                    <input type="text" class="form-control" name="nom" placeholder="Nom">
                 </div>
                 <div class="form-group">
                     <label>Téléphone</label>
-                    <input type="text" class="form-control" name="tel">
+                    <input type="text" class="form-control" name="tel" placeholder="Téléphone">
                 </div>
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="email" class="form-control" name="email">
+                    <input type="email" class="form-control" name="email" placeholder="Adresse mail">
                 </div>
                 <div class="form-group">
                     <label>Mot de passe</label>
-                    <input type="password" class="form-control" name="password">
+                    <input type="password" class="form-control" name="password" placeholder="Mot de passe">
                 </div>
                 <button class="btn btn-primary ">Valider</button>
             </form>

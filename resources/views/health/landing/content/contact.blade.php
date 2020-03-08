@@ -9,7 +9,7 @@
 
         </div>
         <div class="col-md-6">
-            <form action="/comentaire" method="post" class="row">
+            <form action="/comentaires" method="post" class="row">
                 @csrf
                 <div class="col-md-4">
                     <div class="form-group">
