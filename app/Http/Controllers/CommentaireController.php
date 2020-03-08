@@ -29,7 +29,7 @@ class CommentaireController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $commentaires = $this->commentaireRepository->paginate(10);
+        $commentaires = $this->commentaireRepository->all();
 
         return view('commentaires.index')
             ->with('commentaires', $commentaires);
@@ -60,8 +60,7 @@ class CommentaireController extends AppBaseController
 
         Flash::success('Commentaire saved successfully.');
 
-        return redirect(route('landing'));
-        // return redirect(route('commentaires.index'));
+        return redirect(route('commentaires.index'));
     }
 
     /**

@@ -26,36 +26,11 @@ class CommentaireAPIController extends AppBaseController
     }
 
     /**
+     * Display a listing of the Commentaire.
+     * GET|HEAD /commentaires
+     *
      * @param Request $request
      * @return Response
-     *
-     * @SWG\Get(
-     *      path="/commentaires",
-     *      summary="Get a listing of the Commentaires.",
-     *      tags={"Commentaire"},
-     *      description="Get all Commentaires",
-     *      produces={"application/json"},
-     *      @SWG\Response(
-     *          response=200,
-     *          description="successful operation",
-     *          @SWG\Schema(
-     *              type="object",
-     *              @SWG\Property(
-     *                  property="success",
-     *                  type="boolean"
-     *              ),
-     *              @SWG\Property(
-     *                  property="data",
-     *                  type="array",
-     *                  @SWG\Items(ref="#/definitions/Commentaire")
-     *              ),
-     *              @SWG\Property(
-     *                  property="message",
-     *                  type="string"
-     *              )
-     *          )
-     *      )
-     * )
      */
     public function index(Request $request)
     {
@@ -69,42 +44,12 @@ class CommentaireAPIController extends AppBaseController
     }
 
     /**
-     * @param CreateCommentaireAPIRequest $request
-     * @return Response
+     * Store a newly created Commentaire in storage.
+     * POST /commentaires
      *
-     * @SWG\Post(
-     *      path="/commentaires",
-     *      summary="Store a newly created Commentaire in storage",
-     *      tags={"Commentaire"},
-     *      description="Store Commentaire",
-     *      produces={"application/json"},
-     *      @SWG\Parameter(
-     *          name="body",
-     *          in="body",
-     *          description="Commentaire that should be stored",
-     *          required=false,
-     *          @SWG\Schema(ref="#/definitions/Commentaire")
-     *      ),
-     *      @SWG\Response(
-     *          response=200,
-     *          description="successful operation",
-     *          @SWG\Schema(
-     *              type="object",
-     *              @SWG\Property(
-     *                  property="success",
-     *                  type="boolean"
-     *              ),
-     *              @SWG\Property(
-     *                  property="data",
-     *                  ref="#/definitions/Commentaire"
-     *              ),
-     *              @SWG\Property(
-     *                  property="message",
-     *                  type="string"
-     *              )
-     *          )
-     *      )
-     * )
+     * @param CreateCommentaireAPIRequest $request
+     *
+     * @return Response
      */
     public function store(CreateCommentaireAPIRequest $request)
     {
@@ -116,42 +61,12 @@ class CommentaireAPIController extends AppBaseController
     }
 
     /**
-     * @param int $id
-     * @return Response
+     * Display the specified Commentaire.
+     * GET|HEAD /commentaires/{id}
      *
-     * @SWG\Get(
-     *      path="/commentaires/{id}",
-     *      summary="Display the specified Commentaire",
-     *      tags={"Commentaire"},
-     *      description="Get Commentaire",
-     *      produces={"application/json"},
-     *      @SWG\Parameter(
-     *          name="id",
-     *          description="id of Commentaire",
-     *          type="integer",
-     *          required=true,
-     *          in="path"
-     *      ),
-     *      @SWG\Response(
-     *          response=200,
-     *          description="successful operation",
-     *          @SWG\Schema(
-     *              type="object",
-     *              @SWG\Property(
-     *                  property="success",
-     *                  type="boolean"
-     *              ),
-     *              @SWG\Property(
-     *                  property="data",
-     *                  ref="#/definitions/Commentaire"
-     *              ),
-     *              @SWG\Property(
-     *                  property="message",
-     *                  type="string"
-     *              )
-     *          )
-     *      )
-     * )
+     * @param int $id
+     *
+     * @return Response
      */
     public function show($id)
     {
@@ -166,50 +81,13 @@ class CommentaireAPIController extends AppBaseController
     }
 
     /**
+     * Update the specified Commentaire in storage.
+     * PUT/PATCH /commentaires/{id}
+     *
      * @param int $id
      * @param UpdateCommentaireAPIRequest $request
-     * @return Response
      *
-     * @SWG\Put(
-     *      path="/commentaires/{id}",
-     *      summary="Update the specified Commentaire in storage",
-     *      tags={"Commentaire"},
-     *      description="Update Commentaire",
-     *      produces={"application/json"},
-     *      @SWG\Parameter(
-     *          name="id",
-     *          description="id of Commentaire",
-     *          type="integer",
-     *          required=true,
-     *          in="path"
-     *      ),
-     *      @SWG\Parameter(
-     *          name="body",
-     *          in="body",
-     *          description="Commentaire that should be updated",
-     *          required=false,
-     *          @SWG\Schema(ref="#/definitions/Commentaire")
-     *      ),
-     *      @SWG\Response(
-     *          response=200,
-     *          description="successful operation",
-     *          @SWG\Schema(
-     *              type="object",
-     *              @SWG\Property(
-     *                  property="success",
-     *                  type="boolean"
-     *              ),
-     *              @SWG\Property(
-     *                  property="data",
-     *                  ref="#/definitions/Commentaire"
-     *              ),
-     *              @SWG\Property(
-     *                  property="message",
-     *                  type="string"
-     *              )
-     *          )
-     *      )
-     * )
+     * @return Response
      */
     public function update($id, UpdateCommentaireAPIRequest $request)
     {
@@ -228,42 +106,14 @@ class CommentaireAPIController extends AppBaseController
     }
 
     /**
-     * @param int $id
-     * @return Response
+     * Remove the specified Commentaire from storage.
+     * DELETE /commentaires/{id}
      *
-     * @SWG\Delete(
-     *      path="/commentaires/{id}",
-     *      summary="Remove the specified Commentaire from storage",
-     *      tags={"Commentaire"},
-     *      description="Delete Commentaire",
-     *      produces={"application/json"},
-     *      @SWG\Parameter(
-     *          name="id",
-     *          description="id of Commentaire",
-     *          type="integer",
-     *          required=true,
-     *          in="path"
-     *      ),
-     *      @SWG\Response(
-     *          response=200,
-     *          description="successful operation",
-     *          @SWG\Schema(
-     *              type="object",
-     *              @SWG\Property(
-     *                  property="success",
-     *                  type="boolean"
-     *              ),
-     *              @SWG\Property(
-     *                  property="data",
-     *                  type="string"
-     *              ),
-     *              @SWG\Property(
-     *                  property="message",
-     *                  type="string"
-     *              )
-     *          )
-     *      )
-     * )
+     * @param int $id
+     *
+     * @throws \Exception
+     *
+     * @return Response
      */
     public function destroy($id)
     {

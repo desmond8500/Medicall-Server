@@ -10,6 +10,12 @@
     {!! Form::text('mail', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Tel Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('tel', 'Tel:') !!}
+    {!! Form::text('tel', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Message Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('message', 'Message:') !!}

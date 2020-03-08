@@ -21,6 +21,8 @@ class LandingController extends Controller {
       $tabs = [ $tabMenu ];
       return view('health.pages.acceuil', compact('project', 'tabs'));
     }
+
+
     public function new(){
       $project = json_decode(file_get_contents('health/config.json'));
 

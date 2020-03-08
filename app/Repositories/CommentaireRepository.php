@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class CommentaireRepository
  * @package App\Repositories
- * @version January 20, 2020, 9:03 pm UTC
+ * @version March 8, 2020, 3:27 pm UTC
 */
 
 class CommentaireRepository extends BaseRepository
@@ -19,6 +19,7 @@ class CommentaireRepository extends BaseRepository
     protected $fieldSearchable = [
         'nom',
         'mail',
+        'tel',
         'message'
     ];
 

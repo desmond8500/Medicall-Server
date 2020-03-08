@@ -3,6 +3,7 @@
         <thead>
             <th>Nom</th>
         <th>Mail</th>
+        <th>Tel</th>
         <th>Message</th>
             <th colspan="3">Action</th>
         </thead>
@@ -11,6 +12,7 @@
             <tr>
                 <td>{{ $commentaire->nom }}</td>
             <td>{{ $commentaire->mail }}</td>
+            <td>{{ $commentaire->tel }}</td>
             <td>{{ $commentaire->message }}</td>
                 <td>
                     {!! Form::open(['route' => ['commentaires.destroy', $commentaire->id], 'method' => 'delete']) !!}

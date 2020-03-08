@@ -17,6 +17,7 @@ class CreateCommentairesTable extends Migration
             $table->increments('id');
             $table->string('nom');
             $table->string('mail');
+            $table->string('tel');
             $table->text('message');
             $table->timestamps();
             $table->softDeletes();

@@ -19,8 +19,6 @@
                              @include('commentaires.table')
                               <div class="pull-right mr-3">
                                      
-        @include('coreui-templates::common.paginate', ['records' => $commentaires])
-
                               </div>
                          </div>
                      </div>

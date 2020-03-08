@@ -7,9 +7,15 @@
 
 @endphp
 
+<style>
+    .carouselpara{
+        padding-bottom: 20px;
+    }
+</style>
+
 <div class="row">
     <div class="col-md-4">
-        <div class="container">
+        <div class="container carouselpara">
             <p>
                 <h3>Qui Sommes-Nous ?</h3>
                 Medicall est un service d'assistance médicale à domicile. <br>

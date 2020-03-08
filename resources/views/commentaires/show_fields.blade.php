@@ -16,6 +16,12 @@
     <p>{{ $commentaire->mail }}</p>
 </div>
 
+<!-- Tel Field -->
+<div class="form-group">
+    {!! Form::label('tel', 'Tel:') !!}
+    <p>{{ $commentaire->tel }}</p>
+</div>
+
 <!-- Message Field -->
 <div class="form-group">
     {!! Form::label('message', 'Message:') !!}

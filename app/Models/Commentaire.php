@@ -6,43 +6,14 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * @SWG\Definition(
- *      definition="Commentaire",
- *      required={""},
- *      @SWG\Property(
- *          property="id",
- *          description="id",
- *          type="integer",
- *          format="int32"
- *      ),
- *      @SWG\Property(
- *          property="nom",
- *          description="nom",
- *          type="string"
- *      ),
- *      @SWG\Property(
- *          property="mail",
- *          description="mail",
- *          type="string"
- *      ),
- *      @SWG\Property(
- *          property="message",
- *          description="message",
- *          type="string"
- *      ),
- *      @SWG\Property(
- *          property="created_at",
- *          description="created_at",
- *          type="string",
- *          format="date-time"
- *      ),
- *      @SWG\Property(
- *          property="updated_at",
- *          description="updated_at",
- *          type="string",
- *          format="date-time"
- *      )
- * )
+ * Class Commentaire
+ * @package App\Models
+ * @version March 8, 2020, 3:27 pm UTC
+ *
+ * @property string nom
+ * @property string mail
+ * @property string tel
+ * @property string message
  */
 class Commentaire extends Model
 {
@@ -58,6 +29,7 @@ class Commentaire extends Model
     public $fillable = [
         'nom',
         'mail',
+        'tel',
         'message'
     ];
 
@@ -70,6 +42,7 @@ class Commentaire extends Model
         'id' => 'integer',
         'nom' => 'string',
         'mail' => 'string',
+        'tel' => 'string',
         'message' => 'string'
     ];
 
