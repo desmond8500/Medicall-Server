@@ -56,8 +56,6 @@ class HealthController extends Controller
     }
     public function adminpage()
     {
-
-
         $users = User::all();
 
         return view('health.landing.pages.userlist',compact('users',));

@@ -25,7 +25,7 @@
             @isset($user)
                 @if ($user->role == 'admin')
                 <div class="col-md-1">
-                    <a href="{!! route('admin') !!}" class="submenu">Administration</a>
+                    <a href="{!! route('admin') !!}" class="submenu">ADMINISTRATION</a>
                 </div>
                 @endif
             @endisset

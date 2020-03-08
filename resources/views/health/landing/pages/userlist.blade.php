@@ -15,7 +15,7 @@
         <tbody>
             @foreach ($users as $key => $user)
             <tr>
-                <td>{{ $key +1 }}</td>
+                <td>{{ $key + 1 }}</td>
                 <td>{{ $user->prenom }} {{ $user->nom }}</td>
                 <td>{{ $user->tel }}</td>
                 <td>{{ $user->email }}</td>

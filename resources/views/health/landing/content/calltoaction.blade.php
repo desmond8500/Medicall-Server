@@ -45,7 +45,7 @@
                         @csrf
                         <div class="form-group">
                             <label></label>
-                            <select name="" class="form-control">
+                            <select name="personnel" class="form-control">
                                 <option value="Infirmier">Infirmier</option>
                                 <option value="Sage-femme">Sage-femme</option>
                                 <option value="Kinésithérapeute">Kinésithérapeute</option>
