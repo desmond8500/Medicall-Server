@@ -1,17 +1,16 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('vacation')}}">Vacation<span>Rental</span></a>
+        <a class="navbar-brand" href="{{ route('vacation')}}">
+            <img src="{{ asset('src/images/logo/logo.png')}} " alt="" class="img-fluid">
+        </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa fa-bars"></span> Menu
     </button>
     <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" class="nav-link">Homes</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="rooms.html" class="nav-link">Apartment Room</a></li>
-        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            @foreach ($page->getNavigationMenu() as $menu)
+                <li class="nav-item {{  (request()->is("vacation/$menu->route")) ? 'active' : ''}}"><a href="{{ route($menu->route) }}" class="nav-link">{{ $menu->name }}</a></li>
+            @endforeach
         </ul>
     </div>
     </div>

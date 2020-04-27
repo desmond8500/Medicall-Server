@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+    @php
+        use App\Http\Controllers\MedicallController;
+        $page = new MedicallController();
+    @endphp
+
+
     @include('0 vacation.index.head')
     <body>
         @include('0 vacation.index.wrap')

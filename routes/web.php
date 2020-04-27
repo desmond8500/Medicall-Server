@@ -3,7 +3,7 @@
 // ==================================================================================
 // Landing page
 // ==================================================================================
-Route::get('/', 'HealthController@index')->name('health');
+Route::get('/health', 'HealthController@index')->name('health');
 Route::get('/healthlogin', 'HealthController@login')->name('healthlogin');
 Route::get('/healthregister', 'HealthController@register')->name('healthregister');
 Route::post('/registering', 'HealthController@registering')->name('registering');
@@ -20,7 +20,11 @@ Route::get('/admintest', 'HealthController@loginValidate')->name('admintest');
 // ==================================================================================
 // Vacation
 // ==================================================================================
-Route::get('/vacation', 'VacationController@index')->name('vacation');
+Route::get('/', 'VacationController@index')->name('vacation');
+Route::get('/vacation/apropos', 'VacationController@index')->name('apropos');
+Route::get('/vacation/services', 'VacationController@index')->name('services');
+Route::get('/vacation/blog', 'VacationController@blog')->name('blog');
+Route::get('/vacation/contact', 'VacationController@index')->name('contact');
 
 
 // InfyOm
@@ -40,16 +44,16 @@ Route::post(
 
 // My routes ===================================================================
 
-Route::get('/new', 'LandingController@new')->name('new');
-Route::get('/about', 'LandingController@about')->name('about');
-Route::get('/services', 'LandingController@services')->name('services');
-Route::get('/news', 'LandingController@news')->name('news');
-Route::get('/contact', 'LandingController@contact')->name('contact');
+// Route::get('/new', 'LandingController@new')->name('new');
+// Route::get('/about', 'LandingController@about')->name('about');
+// Route::get('/services', 'LandingController@services')->name('services');
+// Route::get('/news', 'LandingController@news')->name('news');
+// Route::get('/contact', 'LandingController@contact')->name('contact');
 
-Route::get('/connect', 'LandingController@login')->name('connect');
-Route::get('/registering', 'LandingController@register')->name('registering');
-Route::get('/help', 'LandingController@contact')->name('help');
-Route::get('/choix/{service?}', 'ServiceController@servicesChoose')->name('servicesChoose');
+// Route::get('/connect', 'LandingController@login')->name('connect');
+// Route::get('/registering', 'LandingController@register')->name('registering');
+// Route::get('/help', 'LandingController@contact')->name('help');
+// Route::get('/choix/{service?}', 'ServiceController@servicesChoose')->name('servicesChoose');
 
 // Réseaux sociaux
 Route::get('facebook', function(){
