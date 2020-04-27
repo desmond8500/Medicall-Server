@@ -17,7 +17,10 @@ Route::get('/admininit', 'AdminController@admininit')->name('admininit');
 Route::get('/adminlist/{categorie?}', 'AdminController@adminlist')->name('adminlist');
 Route::get('/admintest', 'HealthController@loginValidate')->name('admintest');
 
-
+// ==================================================================================
+// Vacation
+// ==================================================================================
+Route::get('/vacation', 'VacationController@index')->name('vacation');
 
 
 // InfyOm
