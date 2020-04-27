@@ -40,8 +40,8 @@
                         <div class="carousel-item @if ($loop->first)active @endif">
                             <img src="{{ asset($item['image']) }}" class="d-block w-100" height="400px"  alt="{{ asset($item['image']) }}">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>{{$key}}</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                {{-- <h5>{{$key}}</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> --}}
                             </div>
                         </div>
                     @endforeach

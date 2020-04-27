@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc79ff54c704f0c92126fbd096025a1e",
+    "content-hash": "45821e5924093152f059768331d1a73b",
     "packages": [
         {
             "name": "appointer/swaggervel",
@@ -61,6 +61,64 @@
                 "swagger"
             ],
             "time": "2019-09-09T20:08:27+00:00"
+        },
+        {
+            "name": "cnvs/canvas",
+            "version": "v5.3.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cnvs/canvas.git",
+                "reference": "367ac7d0431d5e23a56aae633854d61cc59cb380"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cnvs/canvas/zipball/367ac7d0431d5e23a56aae633854d61cc59cb380",
+                "reference": "367ac7d0431d5e23a56aae633854d61cc59cb380",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.10",
+                "ext-json": "*",
+                "laravel/framework": "^6.0|^7.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "orchestra/testbench": "^4.0|^5.0",
+                "phpunit/phpunit": "^8.4|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Canvas\\CanvasServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Canvas\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Todd Austin",
+                    "email": "austin.todd.j@gmail.com"
+                }
+            ],
+            "description": "A Laravel publishing platform",
+            "homepage": "https://cnvs.io",
+            "keywords": [
+                "canvas",
+                "laravel",
+                "platform",
+                "publishing"
+            ],
+            "time": "2020-04-14T16:26:30+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -941,6 +999,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -987,6 +1046,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -1518,6 +1578,7 @@
                 "markdown",
                 "table"
             ],
+            "abandoned": "league/commonmark",
             "time": "2019-09-26T13:28:33+00:00"
         },
         {
