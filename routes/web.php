@@ -15,6 +15,7 @@ Route::get('/quit', 'HealthController@logout')->name('quit');
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/admininit', 'AdminController@admininit')->name('admininit');
 Route::get('/adminlist/{categorie?}', 'AdminController@adminlist')->name('adminlist');
+Route::get('/admintest', 'HealthController@loginValidate')->name('admintest');
 
 
 

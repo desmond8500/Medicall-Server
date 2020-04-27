@@ -18,10 +18,20 @@ class HealthController extends Controller
     }
     public function login()
     {
+        return view('health.landing.pages.login');
+    }
 
+    public function loginValidate(Request $request)
+    {
+        $user = new User();
+        $user->tel = '0000';
+        $user->password = Hash::make('passer');
+
+        $users = Auth::login($user);
 
         return view('health.landing.pages.login');
     }
+
     public function logout()
     {
         Auth::logout();
