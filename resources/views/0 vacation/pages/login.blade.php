@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-<section class="hero-wrap hero-wrap-2" style="background-image: url('');" data-stellar-background-ratio="0.5">
+<section class="login-wrap login-wrap-2" style="background-image: url('');" data-stellar-background-ratio="0.5">
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
@@ -30,7 +30,10 @@
                                     <label>Mot de passe</label>
                                     <input type="password" class="form-control" name="password">
                                 </div>
+
                                 <button class="btn btn-primary mb-1212">Valider</button>
+                                <hr>
+                                <a href="{{ route('v-register')}} ">Créer un compte</a>
                             </form>
                         </div>
                     </div>

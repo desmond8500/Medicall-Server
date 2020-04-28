@@ -8200,6 +8200,8 @@ h1, h2, h3, h4, h5,
     content: '';
     opacity: .1;
     background: #000000; }
+.login-wrap.login-wrap-2 {
+    height: 800px; }
   .hero-wrap.hero-wrap-2 {
     height: 400px; }
     .hero-wrap.hero-wrap-2 .overlay {

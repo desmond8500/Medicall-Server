@@ -20,9 +20,11 @@ class VacationController extends Controller
         $page       = new MedicallController();
         $services   = $page->getServices();
         $offers     = $page->getOffers();
-        $posts      = $page->getLastArticles();
+        // $posts      = \Canvas\Post::published()->orderByDesc('published_at')->paginate(2)->get();
+        $posts      = \Canvas\Post::paginate(10);
+        $topics     = \Canvas\Topic::orderBy('name')->get();
 
-        return view('0 vacation.pages.blog',compact('services', 'offers', 'posts'));
+        return view('0 vacation.pages.blog',compact('services', 'offers', 'posts', 'topics'));
     }
     public function contact(){
         $page       = new MedicallController();

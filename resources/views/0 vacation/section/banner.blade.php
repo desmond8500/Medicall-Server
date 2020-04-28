@@ -5,7 +5,7 @@
             <div class="col-md-9 text-center">
                 <h2>Rejoignez-nous</h2>
                 <p class="mb-4">Si vous êtes infirmier, sage-femme ou kinésithérapeute vous pouvez rejoindre notre équipe où que vou soyez dan le Sénégal</p>
-                <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Postulez-maintenant</a> <a href="#" class="btn btn-white px-4 py-3">Contactez-Nous</a></p>
+                <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3 mb-3">Postulez-maintenant</a> <a href="#" class="btn btn-white px-4 py-3">Contactez-Nous</a></p>
             </div>
         </div>
     </div>
