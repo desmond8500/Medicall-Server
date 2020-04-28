@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\MedicallController;
+use Illuminate\Support\Facades\Auth;
 
 class VacationController extends Controller
 {

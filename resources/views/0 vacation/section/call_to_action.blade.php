@@ -7,7 +7,7 @@
             <div class="col-md-7 ftco-animate">
             <h2 class="subheading">Bienvenue sur Medicall</h2>
             <h1 class="mb-4">Des soins chez vous en un click</h1>
-            <p><a href="#" class="btn btn-primary">Plus d'insformation</a> <a href="#" class="btn btn-white">Contactez-Nous</a></p>
+            <p><a href="#" class="btn btn-primary">Plus d'informations</a> <a href="#" class="btn btn-white">Contactez-Nous</a></p>
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="tel" class="form-control" placeholder="tel" placeholder="Téléphone">
+                                <input type="text" name="tel" class="form-control" placeholder="Téléphone">
                             </div>
                         </div>
                         <div class="col-md-6">

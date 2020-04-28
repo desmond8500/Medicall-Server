@@ -39,13 +39,22 @@ class MedicallController extends Controller
                 "route": "vacation"
             },
             {
-                "title": "Prenez soin de vos proches",
+                "title": "Télémédecine",
                 "image": "src/images/wallpaper/soins.jpg",
-                "description": "Nous mettons à votre disposition un personnel medicall proche de chez vous afin de vous apporter des soins de qualité.",
+                "description": "Notre plaforme permet de prodiguer des soins d\'urgence à une personne qui se trouve dans une zone reculée",
                 "bouton": "Plus d\'informations",
                 "route": "vacation"
             }
         ]');
+
+            // {
+            //     "title": "Prenez soin de vos proches",
+            //     "image": "src/images/wallpaper/soins.jpg",
+            //     "description": "Vous pouvez utiliser notre plateforme pour prendre soins de vos proches qui sont dans la sous région et suivre son état",
+            //     "bouton": "Plus d\'informations",
+            //     "route": "vacation"
+            // }
+
     }
 
     public function getOffers()
@@ -54,7 +63,7 @@ class MedicallController extends Controller
             {
                 "title": "Surveillance médicale",
                 "icon": "flaticon-first",
-                "description": "."
+                "description": "le recueil de données participant à la surveillance de son état de santé "
             },
             {
                 "title": "Injections",
@@ -77,17 +86,16 @@ class MedicallController extends Controller
                 "description": "Kinésithérapie, pédicures"
             },
             {
-                "title": "Surveillance médicale",
-                "icon": "flaticon-first",
-                "description": "le recueil de données participant à la surveillance de son état de santé (mensurations, température, pouls, tension, rythme respiratoire, volume des urines, évaluation de la douleur…),"
-            },
-            {
                 "title": "Dossier medicale en ligne",
                 "icon": "flaticon-first",
                 "description": "Dossier médicall mi  à jour régulièrement "
             }
 
         ]');
+
+
+
+                // "description": "(mensurations, température, pouls, tension, rythme respiratoire, volume des urines, évaluation de la douleur…),"
     }
 
     public function getLastArticles()
