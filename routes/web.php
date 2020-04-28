@@ -25,6 +25,9 @@ Route::get('/vacation/apropos', 'VacationController@apropos')->name('apropos');
 Route::get('/vacation/services', 'VacationController@services')->name('services');
 Route::get('/vacation/blog', 'VacationController@blog')->name('blog');
 Route::get('/vacation/contact', 'VacationController@contact')->name('contact');
+Route::get('/vacation/login', 'VacationController@login')->name('v-login');
+Route::get('/vacation/register', 'VacationController@register')->name('v-register');
+Route::get('/vacation/logout', 'VacationController@logout')->name('v-logout');
 
 
 // InfyOm

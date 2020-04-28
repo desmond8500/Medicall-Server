@@ -47,4 +47,21 @@ class VacationController extends Controller
 
         return view('0 vacation.pages.services',compact('services', 'offers', 'posts'));
     }
+
+    public function login()
+    {
+        return view('0 vacation.pages.login');
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+
+        return redirect()->route('vacation');
+    }
+
+    public function register($role = 'user')
+    {
+        return view('0 vacation.pages.register', compact('role'));
+    }
 }

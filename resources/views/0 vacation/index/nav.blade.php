@@ -11,6 +11,21 @@
             @foreach ($page->getNavigationMenu() as $menu)
                 <li class="nav-item {{  (request()->is("vacation/$menu->route")) ? 'active' : ''}}"><a href="{{ route($menu->route) }}" class="nav-link">{{ $menu->name }}</a></li>
             @endforeach
+                @auth
+                    <li class="nav-item">
+                        <a href="{!! route('v-logout') !!}" class="nav-link" >
+                            <i class="fa fa-sign-out"></i> Deconnexion
+                        </a>
+                    </li>
+                    @endauth
+
+                @guest
+                    <li class="nav-item">
+                        <a href="{{ route('v-login') }}" class="nav-link">
+                            <i class="fa fa-sign-in"></i>  Connexion
+                        </a>
+                    </li>
+                @endguest
         </ul>
     </div>
     </div>

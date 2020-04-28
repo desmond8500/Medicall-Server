@@ -36,7 +36,7 @@ class HealthController extends Controller
     {
         Auth::logout();
 
-        return redirect()->route('health');
+        return redirect()->route('vacation');
     }
     public function register($role = 'user')
     {
