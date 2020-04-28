@@ -21,10 +21,10 @@ Route::get('/admintest', 'HealthController@loginValidate')->name('admintest');
 // Vacation
 // ==================================================================================
 Route::get('/', 'VacationController@index')->name('vacation');
-Route::get('/vacation/apropos', 'VacationController@index')->name('apropos');
-Route::get('/vacation/services', 'VacationController@index')->name('services');
+Route::get('/vacation/apropos', 'VacationController@apropos')->name('apropos');
+Route::get('/vacation/services', 'VacationController@services')->name('services');
 Route::get('/vacation/blog', 'VacationController@blog')->name('blog');
-Route::get('/vacation/contact', 'VacationController@index')->name('contact');
+Route::get('/vacation/contact', 'VacationController@contact')->name('contact');
 
 
 // InfyOm

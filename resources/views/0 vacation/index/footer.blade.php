@@ -9,10 +9,10 @@
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
                 <h2 class="footer-heading">Services</h2>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="py-1 d-block">Map Direction</a></li>
-                    <li><a href="#" class="py-1 d-block">Accomodation Services</a></li>
-                    <li><a href="#" class="py-1 d-block">Great Experience</a></li>
-                    <li><a href="#" class="py-1 d-block">Perfect central location</a></li>
+                    <li><a href="#" class="py-1 d-block">Soins à domicile</a></li>
+                    <li><a href="#" class="py-1 d-block">Assistance</a></li>
+                    <li><a href="#" class="py-1 d-block">Kinésithérapie</a></li>
+                    <li><a href="#" class="py-1 d-block">Télémédecine</a></li>
                 </ul>
             </div>
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
@@ -29,7 +29,8 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-                <h2 class="footer-heading">Newsletter</h2>
+                <h2 class="footer-heading">Restez informé <span></span> </h2>
+
                 <form action="#" class="subscribe-form">
                     <div class="form-group d-flex">
                     <input type="text" class="form-control rounded-left" placeholder="Email">
@@ -38,9 +39,9 @@
                 </form>
                 <h2 class="footer-heading mt-5">Suivez nous</h2>
                 <ul class="ftco-footer-social p-0">
-                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
-                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+                    <li class="ftco-animate"><a target="_blank" href="{{url('https://twitter.com/MedicallSuivi')}}" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+                    <li class="ftco-animate"><a target="_blank" href="{{url('https://web.facebook.com/Medicallsante-102779334743423/?__tn__=%2Cd%2CP-R&eid=ARBpAVhtyIzSwnSYNAtDd56LxIYkdqy599QlOkpiR9BxRevtgPdH29m_9lzgippyn-rmNbkudxeJmWCg')}}" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+                    <li class="ftco-animate"><a target="_blank" href="{{url('https://www.linkedin.com/in/medicall-sant%C3%A9-suivi-3809021a0/')}}" data-toggle="tooltip" data-placement="top" title="Linkedin"><span class="fa fa-linkedin"></span></a></li>
                 </ul>
             </div>
         </div>
