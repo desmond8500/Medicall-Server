@@ -16,16 +16,30 @@ class VacationController extends Controller
 
         return view('0 vacation.index',compact('services', 'offers', 'posts'));
     }
-    public function blog(){
+    public function blog($topic=null){
         $page       = new MedicallController();
         $services   = $page->getServices();
         $offers     = $page->getOffers();
-        // $posts      = \Canvas\Post::published()->orderByDesc('published_at')->paginate(2)->get();
-        $posts      = \Canvas\Post::paginate(10);
-        $topics     = \Canvas\Topic::orderBy('name')->get();
+
+        // if ($topic) {
+        //     $posts      = \Canvas\Post::with('topic');
+        //     $posts      =  $posts->where('topic',$topic)->paginate(10);
+        //     $topics     = \Canvas\Topic::orderBy('name')->get();
+        // }else{
+            $posts      = \Canvas\Post::paginate(10);
+            $topics     = \Canvas\Topic::orderBy('name')->get();
+        // }
 
         return view('0 vacation.pages.blog',compact('services', 'offers', 'posts', 'topics'));
     }
+    public function blogPage($id){
+
+        $post     = \Canvas\Post::find($id);
+        $topics     = \Canvas\Topic::orderBy('name')->get();
+
+        return view('0 vacation.pages.blogpage',compact('post', 'topics'));
+    }
+
     public function contact(){
         $page       = new MedicallController();
         $services   = $page->getServices();
@@ -34,6 +48,7 @@ class VacationController extends Controller
 
         return view('0 vacation.pages.contact',compact('services', 'offers', 'posts'));
     }
+
     public function apropos(){
         $page       = new MedicallController();
         $services   = $page->getServices();
@@ -42,6 +57,7 @@ class VacationController extends Controller
 
         return view('0 vacation.pages.apropos',compact('services', 'offers', 'posts'));
     }
+
     public function services(){
         $page       = new MedicallController();
         $services   = $page->getServices();

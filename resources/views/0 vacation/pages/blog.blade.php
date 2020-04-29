@@ -12,21 +12,20 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="row d-flex">
-                @foreach ($posts as $post)
-                    <div class="col-md-6  ftco-animate">
+                    <h3 class="ml-3">Nos Articles</h3>
+                    @foreach ($posts as $post)
+                    <div class="col-md-12  ftco-animate">
                         <div class="blog-entry align-self-stretch">
-                            <a href="blog-single.html" class="block-20 rounded" style="background-image: url('{{asset($post->featured_image)}}');">
-                            </a>
-                            <div class="text p-4 text-center">
-                            <h3 class="heading"><a href="#">{{ $post->title }}</a></h3>
-                            <div class="meta mb-2">
-                                <div><a href="#">{{ $post->date }}</a></div>
-                                <div><a href="#">Admin</a></div>
-                                <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
-                            </div>
-                            <div class="text-wrap">
-                                <p >{{ $post->summary }}</p>
-                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="{{asset($post->featured_image)}}" alt="{{asset($post->featured_image)}}" class="img-fluid">
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="heading"><a href="{{route('blogpage',['id'=>$post->id])}}">{{ $post->title }}</a></h3>
+                                    <div class="text-wrap">
+                                        <p>{{ $post->summary }}</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -45,9 +44,14 @@
                 <div class="card ">
                     <div class="card-body">
                         <ul>
-                        @foreach ($topics as $topic)
-                            <li>{{ $topic->name }} </li>
-                        @endforeach
+                            <li>
+                                <a href="{{route('blog')}} ">Tous</a>
+                            </li>
+                            @foreach ($topics as $topic)
+                            <li>
+                                <a href="{{route('blog',['topic'=>$topic->id])}} ">{{ $topic->name }}</a>
+                            </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
