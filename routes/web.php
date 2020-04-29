@@ -28,6 +28,7 @@ Route::get('/vacation/blogpage/{id?}', 'VacationController@blogpage')->name('blo
 Route::get('/vacation/contact', 'VacationController@contact')->name('contact');
 Route::get('/vacation/login', 'VacationController@login')->name('v-login');
 Route::get('/vacation/register', 'VacationController@register')->name('v-register');
+Route::post('/vacation/registering', 'VacationController@registering')->name('v-registering');
 Route::get('/vacation/logout', 'VacationController@logout')->name('v-logout');
 
 

@@ -16,7 +16,7 @@
                             <h2 class="text-center">Inscription</h2>
                         </div>
                         <div class="col-md-6 offset-md-3">
-                            <form action="/registering" method="POST" style="height:800px">
+                            <form action="{{route('v-registering')}}" method="POST" style="height:800px">
                                 @csrf
                                 <input type="text" class="form-control" name="role" hidden value="{{ $role }} ">
                                 <div class="row" >

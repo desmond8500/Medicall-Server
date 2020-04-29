@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\MedicallController;
 use Illuminate\Support\Facades\Auth;
+use App\User;
+use Illuminate\Support\Facades\Hash;
 
 class VacationController extends Controller
 {
@@ -82,5 +84,19 @@ class VacationController extends Controller
     public function register($role = 'user')
     {
         return view('0 vacation.pages.register', compact('role'));
+    }
+    public function registering(Request $request)
+    {
+        $user = new User();
+
+        $user->prenom = $request->prenom;
+        $user->nom = $request->nom;
+        $user->tel = $request->tel;
+        $user->email = $request->email;
+        $user->password = Hash::make($request->password);
+        $user->role = $request->role;
+        $user->save();
+
+        return redirect()->route('vacation');
     }
 }

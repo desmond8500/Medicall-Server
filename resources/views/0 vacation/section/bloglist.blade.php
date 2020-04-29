@@ -10,10 +10,10 @@
             @foreach ($posts as $post)
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
-                        <a href="blog-single.html" class="block-20 rounded" style="background-image: url('{{asset('vacationrental/images/image_1.jpg')}}');">
+                        <a href="blog-single.html" class="block-20 rounded" style="background-image: url('{{ $post->featured_image }}');">
                         </a>
                         <div class="text p-4 text-center">
-                        <h3 class="heading"><a href="#">{{ $post->title }}</a></h3>
+                        <h3 class="heading"><a href="{{ route('blogpage',['id'=>$post->id])}}">{{ $post->title }}</a></h3>
                         <div class="meta mb-2">
                             <div><a href="#">{{ $post->date }}</a></div>
                             <div><a href="#">Admin</a></div>

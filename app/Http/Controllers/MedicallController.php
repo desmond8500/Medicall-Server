@@ -93,8 +93,6 @@ class MedicallController extends Controller
 
         ]');
 
-
-
                 // "description": "(mensurations, température, pouls, tension, rythme respiratoire, volume des urines, évaluation de la douleur…),"
     }
 
@@ -102,5 +100,11 @@ class MedicallController extends Controller
     {
         $posts = \Canvas\Post::published()->orderByDesc('published_at')->take(3)->get();
         return $posts;
+    }
+
+    public function getTags()
+    {
+        $tags = \Canvas\Tag::orderBy('name')->get();
+        return $tags;
     }
 }
