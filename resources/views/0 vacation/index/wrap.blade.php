@@ -2,7 +2,12 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col d-flex align-items-center">
-                <p class="mb-0 phone"><span class="mailus">Téléphone:</span> <a href="#">+221 77 837 23 90 </a> / <span class="mailus">Email:</span> <a href="#">medicallsante@gmail.com</a></p>
+                <p class="mb-0 phone">
+                    {{-- <span class="mailus">Téléphone:</span>  --}}
+                    <a href="#">+221 77 837 23 90 </a> /
+                    {{-- <span class="mailus">Email:</span>  --}}
+                    <a href="#">medicallsante@gmail.com</a>
+                </p>
             </div>
             <div class="col d-flex justify-content-end">
                 <div class="social-media">
