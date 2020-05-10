@@ -17,6 +17,9 @@
                         {{ $post->body }}
                     </div>
                 </div>
+                <div>
+                    @comments(['model' => $post])
+                </div>
             </div>
             <div class="col-md-4">
                 <h3>Catégories</h3>

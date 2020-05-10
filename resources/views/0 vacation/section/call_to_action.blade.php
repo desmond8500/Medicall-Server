@@ -17,9 +17,10 @@
     <div class="container">
         <div class="row justify-content-end">
             <div class="col-lg-4">
-                <form action="{{url('')}}" class="appointment-form">
+                <form action="{{route('rvs.store')}}" method="POST" class="appointment-form">
                     @csrf
                     <h3 class="mb-3">Prendre un rendez-vous</h3>
+                    <input type="text" name="statut" value="Nouveau" hidden>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -28,7 +29,7 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="mail" name="mail" class="form-control" placeholder="Email">
+                                <input type="mail" name="email" class="form-control" placeholder="Email">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -41,12 +42,12 @@
                                 <div class="form-field">
                                     <div class="select-wrap">
                                         <div class="icon"><span class="fa fa-chevron-down"></span></div>
-                                        <select name="besoin" id="" class="form-control">
+                                        <select name="besoin" class="form-control">
                                             <option>Besoin</option>
-                                            <option value="1">Infirmier</option>
-                                            <option value="2">Sage-femme</option>
-                                            <option value="3">Kinesitérapeute</option>
-                                            <option value="4">Rejoindre notre équipe</option>
+                                            <option>Infirmier</option>
+                                            <option>Sage-femme</option>
+                                            <option>Kinesitérapeute</option>
+                                            <option>Rejoindre notre équipe</option>
                                         </select>
                                     </div>
                                 </div>
@@ -54,7 +55,7 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea name="description" class="form-control" name="description" placeholder="Description du besoin" cols="10" rows="4"></textarea>
+                                <textarea name="description" class="form-control" placeholder="Description du besoin" cols="10" rows="4"></textarea>
                             </div>
                         </div>
                         <div class="col-md-12">

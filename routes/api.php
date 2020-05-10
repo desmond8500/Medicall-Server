@@ -31,3 +31,7 @@ Route::resource('articles', 'ArticleAPIController');
 Route::resource('commentaires', 'CommentaireAPIController');
 
 Route::resource('rendezvouses', 'RendezvousAPIController');
+
+Route::resource('rvs', 'RvAPIController');
+
+Route::resource('newsletters', 'NewsletterAPIController');

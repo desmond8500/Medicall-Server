@@ -32,12 +32,21 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                @if ($message = Session::get('mail-success'))
+                    <div class="alert alert-success alert-block">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        {{ $message }}
+                    </div>
+                @endif
+
                 <h2 class="footer-heading">Restez informés <span></span> </h2>
 
-                <form action="#" class="subscribe-form">
+                <form action="{{route('newsletters.store')}}" method="POST" class="subscribe-form">
+                    @csrf
                     <div class="form-group d-flex">
-                    <input type="text" class="form-control rounded-left" placeholder="Email">
-                    <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Valider</span><i class="fa fa-paper-plane"></i></button>
+                    <input type="email" class="form-control rounded-left" name="email" placeholder="Email">
+                    <button type="submit" class="form-control submit rounded-right"><i class="fa fa-paper-plane"></i></button>
+                    {{-- <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Valider</span><i class="fa fa-paper-plane"></i></button> --}}
                     </div>
                 </form>
                 <h2 class="footer-heading mt-5">Suivez nous</h2>

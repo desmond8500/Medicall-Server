@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+    @include('flash')
     @include('0 vacation.section.call_to_action')
     @include('0 vacation.section.services',[$services])
     {{-- @include('0 vacation.section.room') --}}

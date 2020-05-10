@@ -105,3 +105,8 @@ Route::resource('commentaires', 'CommentaireController');
 
 
 Route::resource('rendezvouses', 'RendezvousController');
+
+
+Route::resource('rvs', 'RvController');
+
+Route::resource('newsletters', 'NewsletterController');

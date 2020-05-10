@@ -50,6 +50,12 @@
                                             <input type="password" class="form-control" name="password" placeholder="Mot de passe">
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Confirmer le mot de passe</label>
+                                            <input type="password" class="form-control" name="password" placeholder="Confirmation">
+                                        </div>
+                                    </div>
 
                                 </div>
                                 <button class="btn btn-primary ">Valider</button>
