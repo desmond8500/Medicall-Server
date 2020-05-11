@@ -69,7 +69,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 text-md-right">
                     <p class="mb-0 list-unstyled">
-                        <a class="mr-md-3" href="{{route('admin')}}">Terms</a>
+                        <a class="mr-md-3" href="{{route('admin.index')}}">Terms</a>
                         <a class="mr-md-3" href="#">Privacy</a>
                         <a class="mr-md-3" href="#">Compliances</a>
                     </p>

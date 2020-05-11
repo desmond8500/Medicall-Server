@@ -12,6 +12,11 @@
             <div class="col d-flex justify-content-end">
                 <div class="social-media">
                     <p class="mb-0 d-flex">
+                        @yield('adminmenu')
+                        <a href="{{route('admin.index')}}"
+                            class="d-flex align-items-center justify-content-center">
+                            <span class="fa fa-user"><i class="sr-only">Facebook</i></span>
+                        </a>
                         <a target="_blank" href="{{url('https://web.facebook.com/Medicallsante-102779334743423/?__tn__=%2Cd%2CP-R&eid=ARBpAVhtyIzSwnSYNAtDd56LxIYkdqy599QlOkpiR9BxRevtgPdH29m_9lzgippyn-rmNbkudxeJmWCg')}}" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
                         <a target="_blank" href="{{url('https://twitter.com/MedicallSuivi')}}" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
                         <a target="_blank" href="{{url('https://www.linkedin.com/in/medicall-sant%C3%A9-suivi-3809021a0/')}}" class="d-flex align-items-center justify-content-center"><span class="fa fa-linkedin"><i class="sr-only">Linkedin</i></span></a>
