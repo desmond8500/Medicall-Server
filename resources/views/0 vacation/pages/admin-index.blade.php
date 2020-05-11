@@ -8,7 +8,8 @@
 {{-- @include('0 vacation.section.call_to_action2',['title'=>'Admin' , 'image'=>'src/images/wallpaper/services.jpg']) --}}
     <section class="container">
         <h1>Admin index</h1>
-         @foreach ($resumes as $resume)
+        <div class="row">
+            @foreach ($resumes as $resume)
                 <div class="col-md-3">
                     <div class="card border border-primary">
                         <div class="card-body">
@@ -22,8 +23,10 @@
                     </div>
                 </div>
             @endforeach
+        </div>
 
     </section>
+    <hr>
 @endsection
 
 @section('script')

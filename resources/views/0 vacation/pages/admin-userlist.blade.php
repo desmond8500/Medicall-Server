@@ -35,8 +35,10 @@
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->role }}</td>
                     <td>
-                        <a href=""><i class="fa fa-edit"></i></a>
-                        <i class="fa fa-trash"></i>
+                        @include('0 vacation.modal.editUser')
+                        <a href="{{route('admin.user.delete',['id'=> $user->id])}} " class="btn btn-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
                     </td>
                 </tr>
                 @endforeach

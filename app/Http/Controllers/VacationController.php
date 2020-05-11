@@ -108,6 +108,29 @@ class VacationController extends Controller
 
         return redirect()->route('vacation');
     }
+    public function adminUserUpdate(Request $request)
+    {
+        $user = User::find($request->id);
+
+        $user->prenom = $request->prenom;
+        $user->nom = $request->nom;
+        $user->tel = $request->tel;
+        $user->email = $request->email;
+        if($user->password != $request->password){
+            $user->password = Hash::make($request->password);
+        }
+        $user->role = $request->role;
+        $user->save();
+
+        return redirect()->back();
+    }
+    public function adminUserDelete($id)
+    {
+        $user = User::find($id);
+        $user->delete();
+
+        return redirect()->back();
+    }
 
     public function adminIndex(){
         $user = Auth::user();

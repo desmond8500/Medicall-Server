@@ -34,6 +34,8 @@ Route::get('/vacation/admin/index', 'VacationController@adminIndex')->name('admi
 Route::get('/vacation/admin/userlist', 'VacationController@adminUserList')->name('admin.userlist');
 Route::get('/vacation/admin/newsletter', 'VacationController@adminNewsletter')->name('admin.newsletter');
 Route::get('/vacation/admin/rv', 'VacationController@adminRv')->name('admin.rv');
+Route::post('/vacation/admin/userupdate', 'VacationController@adminUserUpdate')->name('admin.user.update');
+Route::get('/vacation/admin/userdelete/{id}', 'VacationController@adminUserDelete')->name('admin.user.delete');
 
 
 // InfyOm
