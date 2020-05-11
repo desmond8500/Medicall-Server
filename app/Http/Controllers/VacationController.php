@@ -35,7 +35,6 @@ class VacationController extends Controller
         return view('0 vacation.pages.blog',compact('services', 'offers', 'posts', 'topics'));
     }
     public function blogPage($id){
-
         $post     = \Canvas\Post::find($id);
         $topics     = \Canvas\Topic::orderBy('name')->get();
 

@@ -24,6 +24,7 @@
                                     <h3 class="heading"><a href="{{route('blogpage',['id'=>$post->id])}}">{{ $post->title }}</a></h3>
                                     <div class="text-wrap">
                                         <p>{{ $post->summary }}</p>
+                                        <a href="{{route('blogpage',['id'=>$post->id])}}" class="btn btn-primary">Consulter</a>
                                     </div>
                                 </div>
                             </div>
@@ -40,21 +41,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <h3>Catégories</h3>
-                <div class="card ">
-                    <div class="card-body">
-                        <ul>
-                            <li>
-                                <a href="{{route('blog')}} ">Tous</a>
-                            </li>
-                            @foreach ($topics as $topic)
-                            <li>
-                                <a href="{{route('blog',['topic'=>$topic->id])}} ">{{ $topic->name }}</a>
-                            </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </div>
+                @include('0 vacation.component.categorie')
             </div>
         </div>
     </div>
