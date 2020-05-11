@@ -8,7 +8,8 @@
                         <div class="media-body py-4 px-3">
                             <h3 class="heading">{{ $service->title}}</h3>
                             <p>{{ $service->description }}</p>
-                            <p><a href="{{ route($service->route)}}" class="btn btn-primary">{{ $service->bouton}}</a></p>
+                            {{-- <p><a href="{{ route($service->route)}}" class="btn btn-primary">{{ $service->bouton}}</a></p> --}}
+                            @include('0 vacation.modal.button',['id'=>$service->id])
                         </div>
                     </div>
                 </div>

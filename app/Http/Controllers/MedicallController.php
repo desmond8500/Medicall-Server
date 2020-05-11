@@ -28,22 +28,22 @@ class MedicallController extends Controller
                 "title": "Soins à domicile",
                 "image": "src/images/wallpaper/infirmière.jpg",
                 "description": "Nous mettons à votre disposition un personnel medicall proche de chez vous afin de vous apporter des soins de qualité.",
-                "bouton": "Plus d\'informations",
-                "route": "vacation"
+                "content": "0 vacation.modal.info_soins",
+                "id": "soins"
             },
             {
                 "title": "Medicall Mobile",
                 "image": "src/images/wallpaper/meghan.jpg",
                 "description": "Avec notre application mobile vous pouvez gérer vos rendez-vous votre suivi médical. Elle est disponible sur android",
-                "bouton": "Plus d\'informations",
-                "route": "vacation"
+                "content": "0 vacation.modal.info_mobile",
+                "id": "mobile"
             },
             {
                 "title": "Télémédecine",
                 "image": "src/images/wallpaper/soins.jpg",
                 "description": "Notre plaforme permet de prodiguer des soins d\'urgence à une personne qui se trouve dans une zone reculée",
-                "bouton": "Plus d\'informations",
-                "route": "vacation"
+                "content": "0 vacation.modal.info_medecine",
+                "id": "medecine"
             }
         ]');
 

@@ -6,12 +6,13 @@
 
 @section('content')
     @include('0 vacation.section.call_to_action2',['title'=>'A propos' , 'image'=>'src/images/wallpaper/services.jpg'])
-    {{-- @include('0 vacation.section.services',[$services]) --}}
-    {{-- @include('0 vacation.section.room') --}}
-    {{-- @include('0 vacation.section.feedback') --}}
-    {{-- @include('0 vacation.section.offer',[$offers])
-    @include('0 vacation.section.banner')
-    @include('0 vacation.section.bloglist',[$posts]) --}}
+
+    <section class="container">
+        <h1>Medicall</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quisquam quia inventore vitae numquam expedita soluta, tempora, rem quam esse libero beatae necessitatibus repellendus aliquid dolorum animi eveniet cupiditate quo.
+        </p>
+    </section>
 @endsection
 
 @section('script')

@@ -13,6 +13,11 @@
     @include('0 vacation.section.offer',[$offers])
     @include('0 vacation.section.banner')
     @include('0 vacation.section.bloglist',[$posts])
+
+     @foreach ($services as $service)
+        @include('0 vacation.modal.modal',['title'=>$service->title, 'id'=>$service->id,'content'=>$service->content])
+    @endforeach
+
 @endsection
 
 @section('script')

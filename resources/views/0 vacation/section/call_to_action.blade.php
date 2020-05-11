@@ -6,8 +6,10 @@
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
             <div class="col-md-7 ftco-animate">
             <h2 class="subheading">Bienvenue sur Medicall</h2>
-            <h1 class="mb-4">Des soins chez vous en un click</h1>
-            <p><a href="{{route('apropos')}}" class="btn btn-primary mb-3">Plus d'informations</a> <a href="{{route('contact')}}" class="btn btn-white">Contactez-Nous</a></p>
+            <h1 class="mb-4">Des soins médicaux de qualité chez vous en un click</h1>
+            <p>
+                <a href="{{route('apropos')}}" class="btn btn-primary mb-3">Plus d'informations</a>
+                <a href="{{route('contact')}}" class="btn btn-white">Contactez-Nous</a></p>
             </div>
         </div>
     </div>
