@@ -10,6 +10,7 @@
     <body>
         @include('0 vacation.index.wrap')
         @include('0 vacation.index.nav')
+        @yield('nav2')
 
         @yield('content')
 

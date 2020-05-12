@@ -153,7 +153,13 @@ class VacationController extends Controller
             'description' => "Nombre de rendez-vous",
             'route' => 'admin.rv'
         );
-        $resumes = array($users, $commentaires, $rv);
+        $blog = array(
+            'titre' => 'Blog',
+            'nombre' => \Canvas\Post::all()->count(),
+            'description' => "Nombre d'articles'",
+            'route' => 'canvas'
+        );
+        $resumes = array($users, $commentaires, $rv, $blog);
         return view('0 vacation.pages.admin-index', compact('resumes', 'user'));
     }
 
@@ -166,13 +172,13 @@ class VacationController extends Controller
     public function adminNewsletter($categorie = null)
     {
         $user = Auth::user();
-        $data = User::all();
-        return view("0 vacation.pages.admin-userlist", compact('data', 'user'));
+        $data = Newsletter::all();
+        return view("0 vacation.pages.admin-newsletter", compact('data', 'user'));
     }
     public function adminRv($categorie = null)
     {
         $user = Auth::user();
-        $data = User::all();
-        return view("0 vacation.pages.admin-userlist", compact('data', 'user'));
+        $data = Rv::all();
+        return view("0 vacation.pages.admin-rv", compact('data', 'user'));
     }
 }

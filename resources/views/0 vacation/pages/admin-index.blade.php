@@ -4,10 +4,12 @@
 
 @endsection
 
+@section('nav2')
+    @include('0 vacation.component.admin-nav')
+@endsection
+
 @section('content')
-{{-- @include('0 vacation.section.call_to_action2',['title'=>'Admin' , 'image'=>'src/images/wallpaper/services.jpg']) --}}
     <section class="container">
-        <h1>Admin index</h1>
         <div class="row">
             @foreach ($resumes as $resume)
                 <div class="col-md-3">

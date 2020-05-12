@@ -37,6 +37,9 @@ Route::get('/vacation/admin/rv', 'VacationController@adminRv')->name('admin.rv')
 Route::post('/vacation/admin/userupdate', 'VacationController@adminUserUpdate')->name('admin.user.update');
 Route::get('/vacation/admin/userdelete/{id}', 'VacationController@adminUserDelete')->name('admin.user.delete');
 
+Route::get('/canvas')->name('canvas');
+
+
 
 // InfyOm
 Auth::routes();

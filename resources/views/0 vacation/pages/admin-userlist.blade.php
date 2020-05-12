@@ -4,12 +4,8 @@
 
 @endsection
 
-@section('adminmenu')
-    {{-- <a href="{{route('admin.index')}}"
-        class="d-flex align-items-center justify-content-center">
-        <span class="fa fa-user"><i class="sr-only">Facebook</i></span>
-    </a> --}}
-
+@section('nav2')
+    @include('0 vacation.component.admin-nav')
 @endsection
 
 @section('content')
