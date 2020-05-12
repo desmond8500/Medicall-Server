@@ -8,9 +8,12 @@
         </div>
         <div class="row d-flex">
             @foreach ($posts as $post)
-                <div class="col-md-4 d-flex ftco-animate">
+                <div class="col-md-4 ftco-animate">
                     <div class="blog-entry align-self-stretch">
-                        <a href="{{ route('blogpage',['id'=>$post->id])}}" class="block-20 rounded" style="background-image: url('{{ $post->featured_image }}');">
+                        {{-- <a href="{{ route('blogpage',['id'=>$post->id])}}" class="block-20 rounded" style="background-image: url('{{ $post->featured_image }}');">
+                        </a> --}}
+                        <a href="{{ route('blogpage',['id'=>$post->id])}}" class="text-center">
+                            <img src="{{ $post->featured_image }}" alt="{{ $post->featured_image }}" height="150px" class="rounded mx-auto d-block" >
                         </a>
                         <div class="text p-4 text-center">
                         <h3 class="heading"><a href="{{ route('blogpage',['id'=>$post->id])}}">{{ $post->title }}</a></h3>

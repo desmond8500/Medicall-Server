@@ -14,7 +14,7 @@
                 <h3 class="ml-3">{{ $post->title }}</h3>
                 <div class="card">
                     <div class="card-body">
-                        {{ $post->body }}
+                        {{ $post->summary }}
                     </div>
                 </div>
 
