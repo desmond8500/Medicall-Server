@@ -36,3 +36,9 @@
         <span>Newsletters</span>
     </a>
 </li>
+<li class="nav-item {{ Request::is('inscriptions*') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('inscriptions.index') }}">
+        <i class="nav-icon icon-cursor"></i>
+        <span>Inscriptions</span>
+    </a>
+</li>

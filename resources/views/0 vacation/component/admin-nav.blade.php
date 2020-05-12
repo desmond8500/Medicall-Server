@@ -1,10 +1,12 @@
 @php
 
 $nav = json_decode('[
+    { "titre": "Admin", "route": "admin.index" },
     { "titre": "Utilisateurs", "route": "admin.userlist" },
     { "titre": "Newsletter", "route": "admin.newsletter" },
     { "titre": "Rendez-Vous", "route": "admin.rv" },
-    { "titre": "Blog", "route": "canvas" }
+    { "titre": "Blog", "route": "canvas" },
+    { "titre": "Cvs", "route": "admin.inscription" }
 ]');
 @endphp
 

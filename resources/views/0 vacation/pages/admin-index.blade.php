@@ -12,7 +12,7 @@
     <section class="container">
         <div class="row">
             @foreach ($resumes as $resume)
-                <div class="col-md-3">
+                <div class="col-md-3 mb-3">
                     <div class="card border border-primary">
                         <div class="card-body">
                             <h5 class="card-title">

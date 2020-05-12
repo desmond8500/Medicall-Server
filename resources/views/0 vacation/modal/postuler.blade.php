@@ -16,16 +16,16 @@
         </p>
     </div>
     <div class="col-md-4">
-        <form action="" method="post">
+        <form action="{{url('inscriptions')}} " method="post">
             @csrf
 
             <div class="form-group">
                 <label for="">Nom</label>
-                <input type="text" name="prenom" class="form-control" placeholder="Prénom et nom">
+                <input type="text" name="nom" class="form-control" placeholder="Prénom et nom">
             </div>
             <div class="form-group">
                 <label for="">Téléphone</label>
-                <input type="text" name="prenom" class="form-control" placeholder="Numéro de téléphone">
+                <input type="text" name="tel" class="form-control" placeholder="Numéro de téléphone">
             </div>
             <div class="form-group">
                 <label for="">CV</label>

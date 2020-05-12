@@ -35,3 +35,5 @@ Route::resource('rendezvouses', 'RendezvousAPIController');
 Route::resource('rvs', 'RvAPIController');
 
 Route::resource('newsletters', 'NewsletterAPIController');
+
+Route::resource('inscriptions', 'InscriptionAPIController');

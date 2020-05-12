@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\MedicallController;
+use App\Models\Inscription;
 use App\Models\Newsletter;
 use App\Models\Rv;
 use Illuminate\Support\Facades\Auth;
@@ -159,7 +160,13 @@ class VacationController extends Controller
             'description' => "Nombre d'articles'",
             'route' => 'canvas'
         );
-        $resumes = array($users, $commentaires, $rv, $blog);
+        $cv = array(
+            'titre' => 'CVs',
+            'nombre' => Inscription::all()->count(),
+            'description' => "Nombre d'articles'",
+            'route' => 'admin.inscription'
+        );
+        $resumes = array($users, $commentaires, $rv, $blog, $cv);
         return view('0 vacation.pages.admin-index', compact('resumes', 'user'));
     }
 
@@ -180,5 +187,13 @@ class VacationController extends Controller
         $user = Auth::user();
         $data = Rv::all();
         return view("0 vacation.pages.admin-rv", compact('data', 'user'));
+    }
+
+    // Inscription des infirmiers
+    public function AdminInscription(Request $request)
+    {
+        $user = Auth::user();
+        $data = Inscription::all();
+        return view("0 vacation.pages.admin-inscription", compact('data', 'user'));
     }
 }
