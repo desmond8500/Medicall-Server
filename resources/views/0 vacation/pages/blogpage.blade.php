@@ -14,6 +14,7 @@
                 <h3 class="ml-3">{{ $post->title }}</h3>
                 <div class="card">
                     <div class="card-body">
+                        <img src="{{ $post->featured_image }}" alt="{{ $post->featured_image }}" height="150px" class="rounded mx-auto d-block mb-4" >
                         {{ $post->summary }}
                     </div>
                 </div>
