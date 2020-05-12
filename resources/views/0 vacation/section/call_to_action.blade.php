@@ -31,12 +31,12 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="mail" name="email" class="form-control" placeholder="Email">
+                                <input type="email" name="email" class="form-control" placeholder="Email">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="tel" class="form-control" placeholder="Téléphone">
+                                <input type="tel" name="tel" class="form-control" placeholder="Téléphone">
                             </div>
                         </div>
                         <div class="col-md-6">
