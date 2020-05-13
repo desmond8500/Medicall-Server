@@ -64,17 +64,47 @@
                 <div class="col-md-6 col-lg-8">
 
                 <p class="copyright mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+                    <a href="{{route('admin.index')}}"><i class="fa fa-heart" aria-hidden="true"></i></a>
+
+                    by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                 </div>
                 <div class="col-md-6 col-lg-4 text-md-right">
                     <p class="mb-0 list-unstyled">
-                        <a class="mr-md-3" href="{{route('admin.index')}}">Terms</a>
-                        <a class="mr-md-3" href="#">Privacy</a>
-                        <a class="mr-md-3" href="#">Compliances</a>
+
+                        <a class="mr-md-3" data-toggle="modal" data-target=".condition">
+                            Conditions d'utilisation
+                        </a>
+                        <a class="mr-md-3" data-toggle="modal" data-target=".politique">
+                            Politique de sécurité
+                        </a>
+
+
                     </p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+
+
+<div class="modal fade condition" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content container">
+    {{-- ====================================================================================== --}}
+        @include('0 vacation.section.condition_utilisation');
+    {{-- ====================================================================================== --}}
+    </div>
+  </div>
+</div>
+
+<div class="modal fade politique" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content container">
+    {{-- ====================================================================================== --}}
+        @include('0 vacation.section.politique_securite');
+    {{-- ====================================================================================== --}}
+    </div>
+  </div>
+</div>
