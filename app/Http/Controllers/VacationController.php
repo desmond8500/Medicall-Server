@@ -22,7 +22,7 @@ class VacationController extends Controller
         $posts      = $page->getLastArticles();
 
         $user = Auth::user();
-        if ($user) {
+        if (isset($user)) {
             switch ($user->role) {
                 case 'admin':
                     return redirect()->route('admin.index');
