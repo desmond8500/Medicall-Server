@@ -9,3 +9,5 @@ Cela permet :
     <li>de benéficier de soins particuliers et adaptés</li>
     <li>de pouvoir bénéficier d'un service d'assistance d'urgence </li>
 </ul>
+
+<a href="{{route('v-rv')}}" class="btn btn-primary btn-block mt-4">Prendre un rendez-vous</a>

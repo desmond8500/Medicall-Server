@@ -15,7 +15,7 @@ class MedicallController extends Controller
     public function getNavigationMenu(){
         return json_decode('[
             { "name": "Acceuil", "route": "vacation" },
-            { "name": "A propops", "route": "apropos" },
+            { "name": "A propos", "route": "apropos" },
             { "name": "Services", "route": "services" },
             { "name": "Blog",    "route": "blog" },
             { "name": "Contact", "route": "contact" }

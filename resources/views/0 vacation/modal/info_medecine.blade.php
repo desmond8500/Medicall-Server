@@ -6,3 +6,5 @@ En cas d'urgence les infimiers disponibles sur place pourront bénéficer d'assi
 
 Nous sommes entrain de développer un système de télémédecine assez performant.
 </p>
+
+<a href="{{route('v-rv')}}" class="btn btn-primary btn-block mt-4">Prendre un rendez-vous</a>

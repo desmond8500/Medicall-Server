@@ -1,22 +1,20 @@
-<div class="hero-wrap js-fullheight" style="background-image: url('{{asset('src/images/wallpaper/mains.jpg')}}');" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
-            <div class="col-md-7 ftco-animate">
-            <h2 class="subheading">Bienvenue sur Medicall</h2>
-            <h1 class="mb-4">Des soins médicaux de qualité chez vous en un click</h1>
-            <p>
-                <a href="{{route('apropos')}}" class="btn btn-primary mb-3">Plus d'informations</a>
-                <a href="{{route('contact')}}" class="btn btn-white">Contactez-Nous</a></p>
-            </div>
-        </div>
-    </div>
-</div>
+@extends('0 vacation.layout')
 
-<section class="ftco-section ftco-book ftco-no-pt ftco-no-pb">
+@section('link')
+
+@endsection
+
+@section('content')
+@include('flash')
+<section class="">
     <div class="container">
-        <div class="row justify-content-end">
-            <div class="col-lg-4">
+        <div class="row">
+            <div class="col-md-4 offset-2">
+                <img src="{{asset('src/images/img/undraw_Booked_j7rj.png')}}" alt="" class="img-fluid">
+                Vous pouvez aussi  nous appeller directement au 77 837 23 90.
+
+            </div>
+            <div class="col-md-4">
                 <form action="{{route('rvs.store')}}" method="POST" class="appointment-form">
                     @csrf
                     <h3 class="mb-3">Prendre un rendez-vous</h3>
@@ -39,18 +37,13 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <div class="form-field">
-                                    <div class="select-wrap">
-                                        <div class="icon"><span class="fa fa-chevron-down"></span></div>
-                                        <select name="besoin" class="form-control">
-                                            <option>Besoin</option>
-                                            <option>Infirmier</option>
-                                            <option>Sage-femme</option>
-                                            <option>Kinesitérapeute</option>
-                                            <option>Rejoindre notre équipe</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                <select name="besoin" class="form-control">
+                                    <option>Besoin</option>
+                                    <option>Infirmier</option>
+                                    <option>Sage-femme</option>
+                                    <option>Kinesitérapeute</option>
+                                    <option>Rejoindre notre équipe</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -69,3 +62,9 @@
         </div>
     </div>
 </section>
+
+@endsection
+
+@section('script')
+
+@endsection

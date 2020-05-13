@@ -29,6 +29,7 @@ Route::get('/vacation/contact', 'VacationController@contact')->name('contact');
 Route::get('/vacation/login', 'VacationController@login')->name('v-login');
 Route::get('/vacation/register', 'VacationController@register')->name('v-register');
 Route::post('/vacation/registering', 'VacationController@registering')->name('v-registering');
+Route::view('/vacation/rv', '0 vacation.pages.rv')->name('v-rv');
 Route::get('/vacation/logout', 'VacationController@logout')->name('v-logout');
 Route::get('/vacation/admin/index', 'VacationController@adminIndex')->name('admin.index');
 Route::get('/vacation/admin/userlist', 'VacationController@adminUserList')->name('admin.userlist');

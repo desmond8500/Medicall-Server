@@ -10,3 +10,5 @@ L'application mobile que nous mettons à disposition permet de :
 </ul>
 
 L'application est en cours de developpement. Il sera disponible sur le Playstore d'Android bientot.
+
+<a href="{{route('v-rv')}}" class="btn btn-primary btn-block mt-4">Prendre un rendez-vous</a>

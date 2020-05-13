@@ -18,7 +18,6 @@
                         {{ $post->summary }}
                     </div>
                 </div>
-
             </div>
             <div class="col-md-4">
                 @include('0 vacation.component.categorie')

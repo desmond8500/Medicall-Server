@@ -44,7 +44,7 @@
                 <form action="{{route('newsletters.store')}}" method="POST" class="subscribe-form">
                     @csrf
                     <div class="form-group d-flex">
-                    <input type="email" class="form-control rounded-left" name="email" placeholder="Email">
+                    <input type="email" class="form-control rounded-left" name="email" placeholder="Email" required>
                     <button type="submit" class="form-control submit rounded-right"><i class="fa fa-paper-plane"></i></button>
                     {{-- <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Valider</span><i class="fa fa-paper-plane"></i></button> --}}
                     </div>

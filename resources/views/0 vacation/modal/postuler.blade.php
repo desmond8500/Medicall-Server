@@ -4,8 +4,7 @@
         <h3>Vous êtes prêts à exercer le métier d'infirmier libéral ? Rejoignez nous !!!</h3>
         <p>
             Nous recrutons actuellement des infimiers, des sage-femmes et des kinésithérapeutes. <br>
-            L'idée c'est de vous permettre d'exercer votre métier prez de chez vous. Ainsi vous serez utile à votre collectivité tout en trouvant votre
-            compte sur le plan professionnel.
+            L'idée c'est de vous permettre d'exercer votre métier prez de chez vous. Ainsi vous serez utile à votre collectivité tout en trouvant votre compte sur le plan professionnel.
         </p>
         <p>
             <h4>Conditions</h4>
