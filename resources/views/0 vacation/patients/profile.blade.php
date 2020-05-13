@@ -5,7 +5,9 @@
 @endsection
 
 @section('content')
-  {{-- <div class="col-md-12">
+<div class="row mt-4">
+    <div class="container">
+          {{-- <div class="col-md-12">
     <h3>Bonjour Mme X</h3>
   </div> --}}
 
@@ -103,5 +105,7 @@
     </div>
 
     </div>
+    </div>
+</div>
 
 @endsection

@@ -21,6 +21,24 @@ class VacationController extends Controller
         $offers     = $page->getOffers();
         $posts      = $page->getLastArticles();
 
+        $user = Auth::user();
+        if ($user) {
+            switch ($user->role) {
+                case 'admin':
+                    return redirect()->route('admin.index');
+                    break;
+                case 'user':
+                    return redirect()->route('patient.index');
+                    break;
+                case 'infirmier':
+                    return redirect()->route('admin.index');
+                    break;
+
+                default:
+                    # code...
+                    break;
+            }
+        }
         return view('0 vacation.index',compact('services', 'offers', 'posts'));
     }
     public function blog($topic=null){
