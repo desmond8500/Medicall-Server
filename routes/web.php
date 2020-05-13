@@ -1,5 +1,9 @@
 <?php
 
+Route::get('/back', function () {
+    return redirect()->back();
+});
+
 // ==================================================================================
 // Landing page
 // ==================================================================================
@@ -36,25 +40,24 @@ Route::get('/vacation/admin/userlist', 'VacationController@adminUserList')->name
 Route::get('/vacation/admin/newsletter', 'VacationController@adminNewsletter')->name('admin.newsletter');
 Route::get('/vacation/admin/rv', 'VacationController@adminRv')->name('admin.rv');
 Route::get('/vacation/admin/inscription', 'VacationController@adminInscription')->name('admin.inscription');
+Route::get('/vacation/admin/todo', 'VacationController@adminTodo')->name('admin.todo');
+Route::get('/vacation/admin/todolist/{id?}', 'VacationController@adminTodolist')->name('admin.todolist');
 Route::post('/vacation/admin/userupdate', 'VacationController@adminUserUpdate')->name('admin.user.update');
 Route::get('/vacation/admin/userdelete/{id}', 'VacationController@adminUserDelete')->name('admin.user.delete');
 
 Route::get('/canvas')->name('canvas');
 
-
+// ==================================================================================
 // InfyOm
+// ==================================================================================
 Auth::routes();
-
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('generator_builder', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@builder')->name('io_generator_builder');
 Route::get('field_template', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@fieldTemplate')->name('io_field_template');
 Route::get('relation_field_template', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@relationFieldTemplate')->name('io_relation_field_template');
 Route::post('generator_builder/generate', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@generate')->name('io_generator_builder_generate');
 Route::post('generator_builder/rollback', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@rollback')->name('io_generator_builder_rollback');
-Route::post(
-    'generator_builder/generate-from-file',
-    '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@generateFromFile'
-)->name('io_generator_builder_generate_from_file');
+Route::post('generator_builder/generate-from-file','\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@generateFromFile')->name('io_generator_builder_generate_from_file');
 
 
 // My routes ===================================================================
@@ -70,22 +73,12 @@ Route::post(
 // Route::get('/help', 'LandingController@contact')->name('help');
 // Route::get('/choix/{service?}', 'ServiceController@servicesChoose')->name('servicesChoose');
 
+// ====================================================================================
 // Réseaux sociaux
-Route::get('facebook', function(){
-  return redirect('https://web.facebook.com/?_rdc=1&_rdr');
-})->name('facebook');
-Route::get('twitter', function(){
-  return redirect('https://twitter.com/MedicallSuivi');
-})->name('twitter');
-Route::get('linkedin', function(){
-  return redirect('https://www.linkedin.com/in/medicall-sant%C3%A9-suivi-3809021a0/');
-})->name('linkedin');
-
-// =============================================================================
-
-
-Route::resource('comptes', 'CompteController');
-Route::resource('articles', 'ArticleController');
+// ====================================================================================
+Route::get('linkedin', function(){ return redirect('https://www.linkedin.com/in/medicall-sant%C3%A9-suivi-3809021a0/'); })->name('linkedin');
+Route::get('facebook', function(){ return redirect('https://web.facebook.com/?_rdc=1&_rdr'); })->name('facebook');
+Route::get('twitter', function() { return redirect('https://twitter.com/MedicallSuivi'); })->name('twitter');
 
 // ====================================================================================
 // User routes
@@ -108,18 +101,15 @@ Route::get('/rapports', 'PatientController@rapports')->name('rapports');
 Route::get('/facturation', 'PatientController@facturation')->name('facturation');
 Route::get('/reglages', 'PatientController@reglages')->name('reglages');
 
-
-
-
+// ====================================================================================
+// REssources routes
+// ====================================================================================
 Route::resource('commentaires', 'CommentaireController');
-
-
+Route::resource('articles', 'ArticleController');
 Route::resource('rendezvouses', 'RendezvousController');
-
-
+Route::resource('comptes', 'CompteController');
 Route::resource('rvs', 'RvController');
-
 Route::resource('newsletters', 'NewsletterController');
-
-
 Route::resource('inscriptions', 'InscriptionController');
+Route::resource('todos', 'TodoController');
+Route::resource('todolists', 'TodolistController');

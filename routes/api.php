@@ -37,3 +37,7 @@ Route::resource('rvs', 'RvAPIController');
 Route::resource('newsletters', 'NewsletterAPIController');
 
 Route::resource('inscriptions', 'InscriptionAPIController');
+
+Route::resource('todos', 'TodoAPIController');
+
+Route::resource('todolists', 'TodolistAPIController');

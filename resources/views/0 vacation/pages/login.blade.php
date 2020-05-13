@@ -20,11 +20,11 @@
                             <h2 class="text-center">Connexion</h2>
                         </div>
                         <div class="col-md-4 offset-md-4">
-                            <form action="/login" method="POST">
+                            <form action="{{url('/login')}}" method="POST">
                                 @csrf
                                 <div class="form-group">
-                                    <label>Téléphone</label>
-                                    <input type="text" class="form-control" name="tel">
+                                    <label for="tel">Téléphone</label>
+                                    <input type="text" id="tel" class="form-control" name="tel" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <label>Mot de passe</label>

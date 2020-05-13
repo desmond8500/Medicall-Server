@@ -7,6 +7,8 @@ use App\Http\Controllers\MedicallController;
 use App\Models\Inscription;
 use App\Models\Newsletter;
 use App\Models\Rv;
+use App\Models\Todo;
+use App\Models\Todolist;
 use Illuminate\Support\Facades\Auth;
 use App\User;
 use Illuminate\Support\Facades\Hash;
@@ -166,7 +168,13 @@ class VacationController extends Controller
             'description' => "Nombre d'articles'",
             'route' => 'admin.inscription'
         );
-        $resumes = array($users, $commentaires, $rv, $blog, $cv);
+        $todo = array(
+            'titre' => 'Todolist',
+            'nombre' => Todo::all()->count(),
+            'description' => "Nombre de taches",
+            'route' => 'admin.todo'
+        );
+        $resumes = array($users, $commentaires, $rv, $blog, $cv, $todo);
         return view('0 vacation.pages.admin-index', compact('resumes', 'user'));
     }
 
@@ -187,6 +195,21 @@ class VacationController extends Controller
         $user = Auth::user();
         $data = Rv::all();
         return view("0 vacation.pages.admin-rv", compact('data', 'user'));
+    }
+    public function adminTodo($categorie = null)
+    {
+        $user = Auth::user();
+        $data = Todo::all();
+        return view("0 vacation.pages.admin-todo", compact('data', 'user'));
+    }
+    public function adminTodolist($id)
+    {
+        $user = Auth::user();
+        $todo = Todo::find($id);
+        $data = Todolist::where('task_id',$todo->id)->get();
+
+        // dd($data);
+        return view("0 vacation.pages.admin-todolist", compact('data', 'todo', 'user'));
     }
 
     // Inscription des infirmiers

@@ -6,7 +6,10 @@ $nav = json_decode('[
     { "titre": "Newsletter", "route": "admin.newsletter" },
     { "titre": "Rendez-Vous", "route": "admin.rv" },
     { "titre": "Blog", "route": "canvas" },
-    { "titre": "Cvs", "route": "admin.inscription" }
+    { "titre": "Cvs", "route": "admin.inscription" },
+    { "titre": "Todo", "route": "admin.todo" },
+    { "titre": "Home", "route": "home" },
+    { "titre": "Generator Builder", "route": "io_generator_builder" }
 ]');
 @endphp
 

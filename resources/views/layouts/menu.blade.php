@@ -42,3 +42,15 @@
         <span>Inscriptions</span>
     </a>
 </li>
+<li class="nav-item {{ Request::is('todos*') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('todos.index') }}">
+        <i class="nav-icon icon-cursor"></i>
+        <span>Todos</span>
+    </a>
+</li>
+<li class="nav-item {{ Request::is('todolists*') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('todolists.index') }}">
+        <i class="nav-icon icon-cursor"></i>
+        <span>Todolists</span>
+    </a>
+</li>
