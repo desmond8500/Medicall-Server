@@ -1,50 +1,47 @@
 <?php
 
-Route::get('/back', function () {
-    return redirect()->back();
-});
-
 // ==================================================================================
 // Landing page
 // ==================================================================================
-Route::get('/health', 'HealthController@index')->name('health');
-Route::get('/healthlogin', 'HealthController@login')->name('healthlogin');
-Route::get('/healthregister', 'HealthController@register')->name('healthregister');
-Route::post('/registering', 'HealthController@registering')->name('registering');
-Route::get('/quit', 'HealthController@logout')->name('quit');
+Route::get('/health',           'HealthController@index')->name('health');
+Route::get('/healthlogin',      'HealthController@login')->name('healthlogin');
+Route::get('/healthregister',   'HealthController@register')->name('healthregister');
+Route::post('/registering',     'HealthController@registering')->name('registering');
+Route::get('/quit',             'HealthController@logout')->name('quit');
 
 // ==================================================================================
 // Admin page
 // ==================================================================================
-Route::get('/admin', 'AdminController@index')->name('admin');
-Route::get('/admininit', 'AdminController@admininit')->name('admininit');
-Route::get('/adminlist/{categorie?}', 'AdminController@adminlist')->name('adminlist');
-Route::get('/admintest', 'HealthController@loginValidate')->name('admintest');
+Route::get('/admin',                    'AdminController@index')->name('admin');
+Route::get('/admininit',                'AdminController@admininit')->name('admininit');
+Route::get('/adminlist/{categorie?}',   'AdminController@adminlist')->name('adminlist');
+Route::get('/admintest',                'HealthController@loginValidate')->name('admintest');
 
 // ==================================================================================
 // Vacation
 // ==================================================================================
-Route::get('/', 'VacationController@index')->name('vacation');
-Route::get('/vacation/apropos', 'VacationController@apropos')->name('apropos');
-Route::get('/vacation/services', 'VacationController@services')->name('services');
-Route::get('/vacation/blog/{topic?}', 'VacationController@blog')->name('blog');
-Route::get('/vacation/blogpage/{id?}', 'VacationController@blogpage')->name('blogpage');
-Route::get('/vacation/contact', 'VacationController@contact')->name('contact');
-Route::get('/vacation/login', 'VacationController@login')->name('v-login');
-Route::get('/vacation/register', 'VacationController@register')->name('v-register');
-Route::post('/vacation/registering', 'VacationController@registering')->name('v-registering');
-Route::view('/vacation/rv', '0 vacation.pages.rv')->name('v-rv');
-Route::get('/vacation/logout', 'VacationController@logout')->name('v-logout');
-Route::get('/vacation/admin/index', 'VacationController@adminIndex')->name('admin.index');
-Route::get('/vacation/admin/userlist', 'VacationController@adminUserList')->name('admin.userlist');
-Route::get('/vacation/admin/newsletter', 'VacationController@adminNewsletter')->name('admin.newsletter');
-Route::get('/vacation/admin/rv', 'VacationController@adminRv')->name('admin.rv');
-Route::get('/vacation/admin/inscription', 'VacationController@adminInscription')->name('admin.inscription');
-Route::get('/vacation/admin/todo', 'VacationController@adminTodo')->name('admin.todo');
-Route::get('/vacation/admin/todolist/{id?}', 'VacationController@adminTodolist')->name('admin.todolist');
-Route::post('/vacation/admin/userupdate', 'VacationController@adminUserUpdate')->name('admin.user.update');
-Route::get('/vacation/admin/userdelete/{id}', 'VacationController@adminUserDelete')->name('admin.user.delete');
+Route::get('/',                         'VacationController@index')->name('vacation');
+Route::get('/vacation/apropos',         'VacationController@apropos')->name('apropos');
+Route::get('/vacation/services',        'VacationController@services')->name('services');
+Route::get('/vacation/blog/{topic?}',   'VacationController@blog')->name('blog');
+Route::get('/vacation/blogpage/{id?}',  'VacationController@blogpage')->name('blogpage');
+Route::get('/vacation/contact',         'VacationController@contact')->name('contact');
+Route::get('/vacation/login',           'VacationController@login')->name('v-login');
+Route::get('/vacation/register',        'VacationController@register')->name('v-register');
+Route::post('/vacation/registering',    'VacationController@registering')->name('v-registering');
+Route::view('/vacation/rv',             '0 vacation.pages.rv')->name('v-rv');
+Route::get('/vacation/logout',          'VacationController@logout')->name('v-logout');
 
+Route::get('/vacation/admin/index',     'VacationController@adminIndex')->name('admin.index');
+Route::get('/vacation/admin/userlist',  'VacationController@adminUserList')->name('admin.userlist');
+Route::get('/vacation/admin/newsletter','VacationController@adminNewsletter')->name('admin.newsletter');
+Route::get('/vacation/admin/rv',        'VacationController@adminRv')->name('admin.rv');
+Route::get('/vacation/admin/inscription',       'VacationController@adminInscription')->name('admin.inscription');
+Route::get('/vacation/admin/todo',              'VacationController@adminTodo')->name('admin.todo');
+Route::get('/vacation/admin/todolist/{id?}',    'VacationController@adminTodolist')->name('admin.todolist');
+Route::post('/vacation/admin/userupdate',       'VacationController@adminUserUpdate')->name('admin.user.update');
+Route::get('/vacation/admin/userdelete/{id}',   'VacationController@adminUserDelete')->name('admin.user.delete');
+// Comments
 Route::get('/canvas')->name('canvas');
 
 // ==================================================================================
@@ -60,19 +57,6 @@ Route::post('generator_builder/rollback', '\InfyOm\GeneratorBuilder\Controllers\
 Route::post('generator_builder/generate-from-file','\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@generateFromFile')->name('io_generator_builder_generate_from_file');
 
 
-// My routes ===================================================================
-
-// Route::get('/new', 'LandingController@new')->name('new');
-// Route::get('/about', 'LandingController@about')->name('about');
-// Route::get('/services', 'LandingController@services')->name('services');
-// Route::get('/news', 'LandingController@news')->name('news');
-// Route::get('/contact', 'LandingController@contact')->name('contact');
-
-// Route::get('/connect', 'LandingController@login')->name('connect');
-// Route::get('/registering', 'LandingController@register')->name('registering');
-// Route::get('/help', 'LandingController@contact')->name('help');
-// Route::get('/choix/{service?}', 'ServiceController@servicesChoose')->name('servicesChoose');
-
 // ====================================================================================
 // Réseaux sociaux
 // ====================================================================================
@@ -83,23 +67,17 @@ Route::get('twitter', function() { return redirect('https://twitter.com/Medicall
 // ====================================================================================
 // User routes
 // ====================================================================================
-Route::get('/patient', 'PatientController@index')->name('patient');
-Route::get('/rv', 'PatientController@rv')->name('rv');
-Route::get('/message', 'PatientController@message')->name('message');
-Route::get('/bilan', 'PatientController@bilan')->name('bilan');
-Route::get('/profile', 'PatientController@profile')->name('profile');
-Route::get('/document', 'PatientController@document')->name('document');
+Route::get('/patient/patient',  'PatientController@index')->name('patient.index');
+Route::get('/patient/rv',       'PatientController@rv')->name('patient.rv');
+Route::get('/patient/message',  'PatientController@message')->name('patient.message');
+Route::get('/patient/bilan',    'PatientController@bilan')->name('patient.bilan');
+Route::get('/patient/profile',  'PatientController@profile')->name('patient.profile');
+Route::get('/patient/document', 'PatientController@document')->name('patient.document');
 
 // ====================================================================================
 // Doctor routes
 // ====================================================================================
-Route::get('/dashboard', 'PatientController@dashboard')->name('dashboard');
-Route::get('/patients', 'PatientController@patients')->name('patients');
-Route::get('/programme', 'PatientController@programme')->name('programme');
-Route::get('/analyse', 'PatientController@analyse')->name('analyse');
-Route::get('/rapports', 'PatientController@rapports')->name('rapports');
-Route::get('/facturation', 'PatientController@facturation')->name('facturation');
-Route::get('/reglages', 'PatientController@reglages')->name('reglages');
+
 
 // ====================================================================================
 // REssources routes

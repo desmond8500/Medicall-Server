@@ -45,26 +45,26 @@ class PatientController extends Controller
         }
         ]');
 
-      return view('health.patients.index', compact('demandes','notifications'));
+      return view('0 vacation.patients.index', compact('demandes','notifications'));
     }
     public function rv() {
 
-      return view('health.patients.rv');
+      return view('0 vacation.patients.rv');
     }
     public function message() {
 
-      return view('health.patients.message');
+      return view('0 vacation.patients.message');
     }
     public function bilan() {
 
-      return view('health.patients.bilan');
+      return view('0 vacation.patients.bilan');
     }
     public function profile() {
 
-      return view('health.patients.profile');
+      return view('0 vacation.patients.profile');
     }
     public function document() {
 
-      return view('health.patients.document');
+      return view('0 vacation.patients.document');
     }
 }

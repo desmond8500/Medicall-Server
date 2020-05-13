@@ -1,24 +1,23 @@
 @php
 
 $nav = json_decode('[
-    { "titre": "Admin", "route": "admin.index" },
-    { "titre": "Utilisateurs", "route": "admin.userlist" },
-    { "titre": "Newsletter", "route": "admin.newsletter" },
-    { "titre": "Rendez-Vous", "route": "admin.rv" },
-    { "titre": "Blog", "route": "canvas" },
-    { "titre": "Cvs", "route": "admin.inscription" },
-    { "titre": "Todo", "route": "admin.todo" },
-    { "titre": "Home", "route": "home" },
-    { "titre": "Generator Builder", "route": "io_generator_builder" },
-    {
-        "titre": "Test",
-        "route": [
-            { "titre": "hello", "route": "hello"},
-            { "titre": "hello", "route": "hello"},
-            { "titre": "hello", "route": "hello"}
-        ]
-    }
-]');
+    { "route": "patient.index", "titre": "Dashboard", "icon": "fa-tachometer" },
+    { "route": "patient.rv", "titre": "Rendez-vous", "icon": "fa-calendar" },
+    { "route": "patient.message", "titre": "Message", "icon": "fa-comments" },
+    { "route": "patient.bilan", "titre": "Mon Bilan", "icon": "fa-heart" },
+    { "route": "patient.profile", "titre": "Mon profile", "icon": "fa-user" },
+    { "route": "patient.document", "titre": "Mes documents", "icon": "fa-file" }
+
+
+    ]');
+    // { "route": "dashboard", "titre": "Dashboard", "icon": "fa-th-large" },
+    // { "route": "patients", "titre": "Dashboard", "icon": "fa-tachometer" },
+    // { "route": "programme", "titre": "Rendez-vous", "icon": "fa-calendar" },
+    // { "route": "message", "titre": "Message", "icon": "fa-comments" },
+    // { "route": "analyse", "titre": "Mon Bilan", "icon": "fa-heart" },
+    // { "route": "rapports", "titre": "Mon profile", "icon": "fa-user" },
+    // { "route": "facturation", "titre": "Mes documents", "icon": "fa-file" },
+    // { "route": "reglages", "titre": "Mes documents", "icon": "fa-file" }
 @endphp
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">

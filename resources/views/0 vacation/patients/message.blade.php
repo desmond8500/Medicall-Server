@@ -1,4 +1,8 @@
-@extends('health.patients.layout')
+@extends('0 vacation.layout')
+
+@section('nav2')
+    @include('0 vacation.component.patient-nav')
+@endsection
 
 @section('content')
   <div class="col-md-12">
