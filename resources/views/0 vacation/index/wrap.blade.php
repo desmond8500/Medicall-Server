@@ -15,11 +15,15 @@
                         @yield('adminmenu')
 
                         @auth
-                            {{-- @if ($user->role=='admin')
+                        @php
+                            use Illuminate\Support\Facades\Auth;
+                            $user = Auth::user();
+                        @endphp
+                            @if ($user->role=='admin')
                                 <a href="{{route('admin.index')}}" class="d-flex align-items-center justify-content-center">
                                     <span class="fa fa-user"><i class="sr-only">Facebook</i></span>
                                 </a>
-                            @endif --}}
+                            @endif
                         @endauth
 
 
