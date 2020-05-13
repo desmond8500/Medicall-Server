@@ -15,7 +15,7 @@
                         @yield('adminmenu')
 
                         @auth
-                        @php
+                        {{-- @php
                             use Illuminate\Support\Facades\Auth;
                             $user = Auth::user();
                         @endphp
@@ -23,7 +23,7 @@
                                 <a href="{{route('admin.index')}}" class="d-flex align-items-center justify-content-center">
                                     <span class="fa fa-user"><i class="sr-only">Facebook</i></span>
                                 </a>
-                            @endif
+                            @endif --}}
                         @endauth
 
 
