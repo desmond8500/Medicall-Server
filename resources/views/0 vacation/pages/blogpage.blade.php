@@ -15,7 +15,7 @@
                 <div class="card">
                     <div class="card-body">
                         <img src="{{ $post->featured_image }}" alt="{{ $post->featured_image }}" height="150px" class="rounded mx-auto d-block mb-4" >
-                        {{ $post->summary }}
+                        {!! $post->body !!}
                     </div>
                 </div>
             </div>
