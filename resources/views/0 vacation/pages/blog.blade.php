@@ -30,7 +30,7 @@
                                 <img src="{{ $post->featured_image }}" class=" rounded mx-auto d-block" height="150px" alt="{{ $post->featured_image }}">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ $post->title }}</h5>
-                                    <p class="card-text blog_body")">{!! $post->body !!}</p>
+                                    <p class="card-text blog_body")">{{ $post->summary }}</p>
                                     <a href="{{route('blogpage',['id'=>$post->id])}}" class="btn btn-primary">Consulter</a>
                                 </div>
                             </div>
